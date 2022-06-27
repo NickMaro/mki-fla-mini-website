@@ -4,6 +4,8 @@ import Header from "../components/Header";
 import LogoBanner from "../components/LogoBanner";
 import ConsentOrdersInAustralia from "../content/ConsentOrdersInAustralia";
 import ContactUs from "../content/ContactUs";
+import FreeDiscussion from "../content/FreeDiscussion";
+import MKITeam from "../content/MKITeam";
 import MostOnlinePopularServices from "../content/MostOnlinePopularServices";
 import OurLegalTeam from "../content/OurLegalTeam";
 import SendAnOfferToYourEx from "../content/SendAnOfferToYourEx";
@@ -21,9 +23,11 @@ export default function Home() {
 
       <main className="w-full h-auto relative">
         <Header />
-        <LogoBanner/>
+        <FreeDiscussion/>
         <MostOnlinePopularServices/>
+        <MKITeam/>
         <ConsentOrdersInAustralia/>
+        <LogoBanner/>
         <SendAnOfferToYourEx/>
         <WeWillRepresentYou/>
         <OurLegalTeam />

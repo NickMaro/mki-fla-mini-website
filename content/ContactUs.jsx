@@ -10,7 +10,7 @@ export default function ContactUs() {
       <h1 className="text-center text-2xl font-semibold">
         Get In Touch With MKI Legal
       </h1>
-      <div className="mt-16 max-w-xl h-auto mx-auto">
+      <div className="mt-16 max-w-4xl h-auto mx-auto">
         <div className="mx-auto flex flex-col justify-center items-center">
           <CallIcon />
           <p className="mt-3">1300 Number</p>
@@ -20,7 +20,7 @@ export default function ContactUs() {
           <p className="mt-3">help@familylawassist.com.au</p>
         </div>
 
-        <div className="grid grid-cols-2 mt-20">
+        <div className="grid grid-cols-3 gap-8 mt-20">
           <div className="mx-auto flex flex-col justify-center items-center">
             <LocationIcon />
             <p className="mt-3 text-center">
@@ -45,9 +45,22 @@ export default function ContactUs() {
               EAST PERTH WA 6004
             </p>
           </div>
+
+          <div className="mx-auto flex flex-col justify-center items-center">
+            <LocationIcon />
+            <p className="mt-3 text-center">
+              QLD
+              <br />
+              Suite 1, Level 4,
+              <br />
+              200 Adelaide Terrace,
+              <br />
+              EAST PERTH WA 6004
+            </p>
+          </div>
         </div>
 
-        <button className="bg-primary text-white font-semibold text-lg rounded-md w-1/2 py-3 mt-20 mx-auto block">
+        <button className="bg-primary text-white font-semibold text-lg rounded-md w-5/12 py-3 mt-20 mx-auto block">
         Free Discussion
         </button>
       </div>

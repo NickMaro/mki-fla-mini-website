@@ -27,7 +27,7 @@ export default function ConsentOrdersInAustralia() {
               <Image src={SS} quality={90} placeholder="blurred" alt="Meagan" />
 
               <button className="bg-primary text-white font-semibold text-lg rounded-md w-full py-3 mt-4">
-                1300 123 123
+              Get Started
               </button>
             </div>
             <div className="mx-auto">

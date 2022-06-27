@@ -50,7 +50,7 @@ export default function SendAnOfferToYourEx() {
               <Image src={SS} quality={90} placeholder="blurred" alt="Meagan" />
 
               <button className="bg-primary text-white font-semibold text-lg rounded-md w-full py-3 mt-12">
-                1300 123 123
+              Get Started
               </button>
             </div>
           </div>

@@ -4,6 +4,9 @@ import Image from "next/image";
 import Logo from "../../public/assets/logo/mki-logo-2.png";
 import MailIcon from "../../public/assets/images/mail.png";
 import ContactIcon from "../../public/assets/images/contact.png";
+import NSW from "../../public/assets/logo/image-2.png";
+import WestAustralia from "../../public/assets/logo/image-3.png";
+import QLD from "../../public/assets/logo/image-5.png";
 
 const Footer = () => {
   return (
@@ -25,27 +28,48 @@ const Footer = () => {
             <br />
             <span>EAST PERTH WA 6004</span>
           </div>
+
+          <div className="text-accent uppercase mb-4 text-sm">NSW Office:</div>
+          <div className="text-sm leading-6 mb-6">
+            <span>Level 11,</span>
+            <br />
+            <span>66 Clarence Street </span>
+            <br />
+            <span>SYDNEY NSW 2000</span>
+          </div>
+
+          <div className="text-accent uppercase mb-4 text-sm">QLD Office:</div>
+          <div className="text-sm leading-6 mb-6">
+            <span>QLD</span>
+            <br />
+            <span>200 Adelaide Terrace</span>
+            <br />
+            <span>EAST PERTH WA 6004</span>
+          </div>
+
           <div className="text-sm leading-4">
             <span className="flex items-center">
-              <Image
-                src={MailIcon}
-                quality={90}
-                placeholder="blurred"
-                className="h-4 mr-2"
-                alt="mail"
-              />
-              <p className="ml-2">help@familylawassist.com.au</p>
+              <div className="w-1/12">
+                <Image
+                  src={MailIcon}
+                  quality={90}
+                  placeholder="blurred"
+                  alt="mail"
+                />
+              </div>
+              <p className="pl-2 w-11/12">help@familylawassist.com.au</p>
             </span>
             <br />
             <span className="flex items-center">
-              <Image
-                src={ContactIcon}
-                quality={90}
-                placeholder="blurred"
-                className="h-5 mr-2"
-                alt="contact"
-              />
-              <p className="ml-2">(08) 9470 2777</p>
+              <div className="w-1/12">
+                <Image
+                  src={ContactIcon}
+                  quality={90}
+                  placeholder="blurred"
+                  alt="contact"
+                />
+              </div>
+              <p className="pl-2 w-11/12">(08) 9470 2777</p>
             </span>
           </div>
         </div>
@@ -53,7 +77,10 @@ const Footer = () => {
           <div className="xl:w-3/12 w-full mb-8 xl:mb-0">
             <p className="uppercase text-sm font-medium mb-8">Our Services</p>
             <div className="text-sm leading-8 pr-8">
-              <Link className="text-sm" href="/property-settlement-lawyers-perth">
+              <Link
+                className="text-sm"
+                href="/property-settlement-lawyers-perth"
+              >
                 Property (Assets & Debts)
               </Link>
               <br />
@@ -144,6 +171,38 @@ const Footer = () => {
                 regarding your own situation.
               </span>
             </p>
+
+            <div className="w-72 mt-12">
+              <Image
+                src={WestAustralia}
+                quality={90}
+                placeholder="blurred"
+                className="mb-6"
+                alt="MKI Legal Logo"
+              />
+            </div>
+            <div className="flex mt-8 justify-start">
+            <div className="w-32">
+              <Image
+                src={QLD}
+                quality={90}
+                placeholder="blurred"
+                // height={150}
+                objectFit="contain"
+                alt="MKI Legal Logo"
+              />
+            </div>
+            <div className="w-64 ml-5">
+              <Image
+                src={NSW}
+                quality={90}
+                placeholder="blurred"
+                className="mb-6"
+                alt="MKI Legal Logo"
+              />
+            </div>
+
+            </div>
           </div>
         </div>
       </div>

@@ -6,7 +6,7 @@ import Logo3 from "../../public/assets/logo/image-5.png";
 
 export default function LogoBanner() {
   return (
-    <div className="bg-blue-600 p-20 flex items-center justify-around">
+    <div className="bg-blue-600 px-20 py-10 flex items-center justify-around">
       <div className="w-1/5">
         <Image
           src={Logo}
@@ -14,6 +14,8 @@ export default function LogoBanner() {
           placeholder="blurred"
           className="mb-6"
           alt="MKI Legal Logo"
+          objectFit="contain"
+          height={200}
         />
       </div>
       <div className="w-1/5">
@@ -30,8 +32,9 @@ export default function LogoBanner() {
           src={Logo3}
           quality={90}
           placeholder="blurred"
-          className="mb-6"
           alt="MKI Legal Logo"
+          objectFit="contain"
+          height={200}
         />
       </div>
     </div>
