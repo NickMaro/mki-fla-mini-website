@@ -61,7 +61,7 @@ const Featured = () => {
               className="flex justify-center items-center w-1/2 md:w-1/4 p-4 mb-6 lg:mb-0"
               key={`featuredMedia-${i}`}
             >
-              <Image src={src} quality={90} placeholder="blurred" alt={alt} />
+              <Image src={src} quality={90} placeholder="blurred" alt={alt} loading="lazy"/>
             </div>
           );
         })}

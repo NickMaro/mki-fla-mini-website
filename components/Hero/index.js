@@ -31,6 +31,8 @@ const HeroImage = ({
                   src={bgImage}
                   style={{ position: "absolute" }}
                   alt={`Hero Section Image-${i}`}
+                  loading="lazy"
+                  placeholder="blurred"
                 />
               </div>
             ))}
@@ -45,12 +47,16 @@ const HeroImage = ({
   return (
     <div className="hero-section-bg-image">
       <div className="absolute w-full h-full">
-        <Image
-          src={bgImages}
-          alt={altImageText}
-          layout="fill"
-          objectFit="cover"
-        />
+        {bgImages ? (
+          <Image
+            src={bgImages}
+            alt={altImageText}
+            layout="fill"
+            objectFit="cover"
+            loading="lazy"
+            placeholder="blurred"
+          />
+        ) : null}
       </div>
       <div className="overlay"></div>
       <div className="blue-overlay"></div>

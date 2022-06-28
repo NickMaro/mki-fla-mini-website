@@ -5,7 +5,6 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
     "./content/**/*.{js,ts,jsx,tsx}",
   ],
-  darkMode: false, // or 'media' or 'class'
   theme: {
     container: {
       screens: {
@@ -85,6 +84,9 @@ module.exports = {
       scale: {
         "-150": "-1.5",
       },
+      zIndex: {
+        '1': '-1',
+      }
     },
   },
   variants: {

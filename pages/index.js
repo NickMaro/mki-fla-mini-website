@@ -1,9 +1,6 @@
 import Head from "next/head";
-import Footer from "../components/footer";
-import Header from "../components/Header";
 import LogoBanner from "../components/LogoBanner";
 import ConsentOrdersInAustralia from "../content/ConsentOrdersInAustralia";
-import ContactUs from "../content/ContactUs";
 import FreeDiscussion from "../content/FreeDiscussion";
 import MKITeam from "../content/MKITeam";
 import MostOnlinePopularServices from "../content/MostOnlinePopularServices";
@@ -11,6 +8,9 @@ import OurLegalTeam from "../content/OurLegalTeam";
 import SendAnOfferToYourEx from "../content/SendAnOfferToYourEx";
 import WeOperateAustraliaWide from "../content/WeOperateAustraliaWide";
 import WeWillRepresentYou from "../content/WeWillRepresentYou";
+
+import DefaultLayout from "layouts/BaseLayout";
+import GetInTouch from "components/GetInTouch";
 
 export default function Home() {
   return (
@@ -21,21 +21,18 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="w-full h-auto relative">
-        <Header />
-        <FreeDiscussion/>
-        <MostOnlinePopularServices/>
-        <MKITeam/>
-        <ConsentOrdersInAustralia/>
-        <LogoBanner/>
-        <SendAnOfferToYourEx/>
-        <WeWillRepresentYou/>
+      <DefaultLayout>
+        <FreeDiscussion />
+        <MostOnlinePopularServices />
+        <MKITeam />
+        <ConsentOrdersInAustralia />
+        <LogoBanner />
+        <SendAnOfferToYourEx />
+        <WeWillRepresentYou />
         <OurLegalTeam />
         <WeOperateAustraliaWide />
-        <ContactUs/>
-      </main>
-
-      <Footer />
+        <GetInTouch isDiscussionFreeToShow={true} />
+      </DefaultLayout>
     </div>
   );
 }

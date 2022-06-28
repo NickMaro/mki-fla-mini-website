@@ -2,7 +2,7 @@ import React from "react";
 
 import BaseLayout from "layouts/BaseLayout";
 import ContactForm from "components/ContactForm";
-
+import GetInTouch from "components/GetInTouch";
 
 const ContactUs = () => {
   return (
@@ -30,10 +30,8 @@ const ContactUs = () => {
       </section>
 
       <section className="section-grey">
-        {/* <GetInTouch /> */}
+        <GetInTouch />
       </section>
-
-     
     </BaseLayout>
   );
 };

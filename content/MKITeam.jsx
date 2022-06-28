@@ -37,18 +37,20 @@ export default function MKITeam() {
           placeholder="blurred"
           className="mb-6"
           alt="FeaturedIn"
+          loading="lazy"
         />
       </div>
 
-      <div className="grid grid-cols-10 gap-10 container mx-auto px-32 pt-20">
+      <div className="grid grid-cols-10 gap-10 container mx-auto md:px-32 pt-20">
         {team.map((t, idx) => (
-          <div className="col-span-2" key={idx}>
+          <div className="col-span-5 lg:col-span-2 p-4 lg:p-0" key={idx}>
             <Image
               src={t}
               quality={90}
               placeholder="blurred"
               className="mb-6"
-              alt="t"
+              alt={t}
+              loading="lazy"
             />
           </div>
         ))}

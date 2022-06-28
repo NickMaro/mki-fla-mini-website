@@ -20,7 +20,7 @@ const CardImage = ({ image, order, imageWrapperClass }) => {
 
 const Card = ({
   children,
-  title,
+  title = "",
   direction,
   hasBottomMargin,
   image,

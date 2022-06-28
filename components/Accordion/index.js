@@ -3,30 +3,27 @@ import PropTypes from "prop-types";
 import Collapse from "rc-collapse";
 import { FaChevronRight } from "react-icons/fa";
 
-const Accordion = ({ faqFor, openCount, openIndex }) => {
+const Accordion = ({ faqFor, openCount, openIndex, blog }) => {
   const { Panel } = Collapse;
 
-
-  const questions = data.allMarkdownRemark.edges.filter(
-    edge => edge.node.frontmatter.for === faqFor
-  );
+  const questions = blog.filter((a) => a.formatter.for === faqFor);
 
   questions.sort((a, b) =>
-    a.node.frontmatter.order > b.node.frontmatter.order
+    a?.formatter.order > b?.formatter.order
       ? 1
-      : b.node.frontmatter.order > a.node.frontmatter.order
+      : b.formatter.order > a.formatter.order
       ? -1
       : 0
   );
 
   const _openIndex =
-    openIndex.length > 0 ? openIndex.map(item => `question-${item}`) : [];
+    openIndex.length > 0 ? openIndex.map((item) => `question-${item}`) : [];
 
   const defaultActiveKey = [];
   for (let i = 0; i < openCount; i++) {
     defaultActiveKey.push(`question-${i}`);
   }
-
+console.log([...defaultActiveKey, ..._openIndex])
   return (
     <div className="custom-container">
       <div className="flex flex-col items-center mb-12">
@@ -43,18 +40,19 @@ const Accordion = ({ faqFor, openCount, openIndex }) => {
           <Collapse
             accordion={false}
             defaultActiveKey={[...defaultActiveKey, ..._openIndex]}
-            expandIcon={props => <FaChevronRight />}
+            expandIcon={(props) => <FaChevronRight />}
             className="w-full lg:w-10/12 mx-auto custom-accordion"
           >
-            {questions.map((question, i) => (
+            {questions.map(({ formatter, content }, i) => (
               <Panel
                 key={`question-${i}`}
-                header={question.node.frontmatter.title}
-                headerClass="focus:outline-none"
-                className="mb-12 shadow-md rounded-md bg-white overflow-hidden"
+                header={formatter.title}
+                headerClass="focus:outline-none flex"
+                className="mb-12 shadow-md rounded-md bg-white overflow-hidden relative"
               >
                 <div
-                  dangerouslySetInnerHTML={{ __html: question.node.html }}
+                  className="text-gray-600 text-xl"
+                  dangerouslySetInnerHTML={{ __html: content }}
                 />
               </Panel>
             ))}

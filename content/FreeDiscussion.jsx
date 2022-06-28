@@ -4,22 +4,19 @@ import Flag from "../public/assets/images/flag.png";
 
 export default function FreeDiscussion() {
   return (
-    <section className="w-full h-auto p-20 flex flex-col items-center">
-      <div className="relative mt-8">
-      <h1 className="text-4xl font-bold bg-accent text-white px-2 w-fit">
-        Affordable Family Law Assitance
-      </h1>
-      <div className="w-28 absolute -right-20 -top-16 z-1 p-3">
-        <Image
-          src={Flag}
-          quality={90}
-          placeholder="blurred"
-          className="mb-6"
-          alt="flag"
-        />
+    <section className="w-full h-auto md:px-20 py-40 flex flex-col items-center">
+      <div className="relative mt-8 flex flex-col items-center justify-center">
+        <h1 className="mx-8 text-center text-5xl font-bold bg-accent text-white p-2 w-fit z-40">
+          Affordable Family Law Assitance
+        </h1>
+        <span
+          className="w-40 absolute lg:-right-28 -top-32 lg:-top-20 -mt-2 z-1 p-3"
+        >
+          <Image src={Flag} quality={90} placeholder="blurred" alt="flag" loading="lazy"/>
+        </span>
       </div>
-      </div>
-      <p className="text-center py-2">
+
+      <p className="text-center py-12">
         <span className="font-semibold">
           Save Thousands On
           <br />
@@ -29,9 +26,9 @@ export default function FreeDiscussion() {
         We operate Australia wide!
       </p>
 
-      <button className="bg-primary text-white font-semibold text-lg rounded-md w-fit py-2 px-7 mt-5 mx-auto block">
-      Free Discussion - Get Started
-            </button>
+      <button className="bg-primary text-white font-semibold text-lg rounded-md w-fit py-3 px-7 mx-auto block">
+        Free Discussion - Get Started
+      </button>
     </section>
   );
 }

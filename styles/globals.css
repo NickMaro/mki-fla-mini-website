@@ -313,3 +313,35 @@
     }
   }
 }
+
+/* Accordion */
+
+.rc-collapse.custom-accordion {
+  @apply bg-transparent border-none;
+}
+
+.rc-collapse-item svg {
+  @apply transition-all ease-in-out duration-150;
+}
+
+.rc-collapse-item.rc-collapse-item-active svg {
+  @apply transform rotate-90;
+}
+
+.rc-collapse.custom-accordion > .rc-collapse-item > .rc-collapse-header {
+  @apply text-dark uppercase font-extrabold text-lg px-4 py-6 justify-between;
+}
+
+.rc-collapse.custom-accordion > .rc-collapse-item > .rc-collapse-header > .rc-collapse-expand-icon {
+  @apply order-2;
+}
+
+.rc-collapse.custom-accordion > .rc-collapse-item {
+  @apply border-none;
+}
+
+#faq-wrapper ul {
+  list-style-type: disc;
+  list-style-position: inside;
+  margin-left: 0.5rem;
+}

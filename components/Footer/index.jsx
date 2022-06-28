@@ -19,6 +19,7 @@ const Footer = () => {
             placeholder="blurred"
             className="mb-6"
             alt="MKI Legal Logo"
+            loading="lazy"
           />
           <div className="text-accent uppercase mb-4 text-sm">Head Office:</div>
           <div className="text-sm leading-6 mb-6">
@@ -55,6 +56,7 @@ const Footer = () => {
                   quality={90}
                   placeholder="blurred"
                   alt="mail"
+                  loading="lazy"
                 />
               </div>
               <p className="pl-2 w-11/12 text-sm">help@familylawassist.com.au</p>
@@ -67,6 +69,7 @@ const Footer = () => {
                   quality={90}
                   placeholder="blurred"
                   alt="contact"
+                  loading="lazy"
                 />
               </div>
               <p className="pl-2 w-11/12 text-sm">(08) 9470 2777</p>
@@ -158,6 +161,7 @@ const Footer = () => {
                 placeholder="blurred"
                 className="mb-6"
                 alt="MKI Legal Logo"
+                loading="lazy"
               />
             </div>
             <div className="flex mt-8 justify-start">
@@ -166,9 +170,9 @@ const Footer = () => {
                   src={QLD}
                   quality={90}
                   placeholder="blurred"
-                  // height={150}
                   objectFit="contain"
                   alt="MKI Legal Logo"
+                  loading="lazy"
                 />
               </div>
               <div className="w-64 ml-5">
@@ -178,6 +182,7 @@ const Footer = () => {
                   placeholder="blurred"
                   className="mb-6"
                   alt="MKI Legal Logo"
+                  loading="lazy"
                 />
               </div>
             </div>

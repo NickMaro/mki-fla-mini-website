@@ -6,7 +6,7 @@ import Footer from "components/Footer";
 
 // import "slick-carousel/slick/slick.css";
 // import "slick-carousel/slick/slick-theme.css";
-// import "rc-collapse/assets/index.css";
+ import "rc-collapse/assets/index.css";
 // import "@styles/_tailwind.css";
 
 const DefaultLayout = ({ children }) => {

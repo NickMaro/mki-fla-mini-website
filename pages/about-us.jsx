@@ -49,6 +49,7 @@ const PeopleList = ({ people }) => {
             placeholder="blurred"
             className="mb-6"
             alt={name}
+            loading="lazy"
           />
         </div>
         <h3 className="font-bold uppercase mb-4 text-2xl">{name}</h3>
@@ -91,6 +92,7 @@ const AboutUS = () => {
               quality={50}
               placeholder="blurred"
               alt="MKI Legal Team"
+              loading="lazy"
             />
           </div>
         </div>

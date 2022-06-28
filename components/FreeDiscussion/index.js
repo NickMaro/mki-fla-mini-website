@@ -25,6 +25,7 @@ const FreeDiscussion = ({ tagline }) => {
             quality={80}
             placeholder="blurred"
             alt="Chat To Our Team Of Family Lawyers Today"
+            loading="lazy"
           />
         </div>
         <div className="lg:w-7/12 xl:w-6/12 px-4">
