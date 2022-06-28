@@ -1,11 +1,10 @@
-import React from "react";
-import { graphql, useStaticQuery } from "gatsby";
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
-import FreeDiscussionButton from "@components/FreeDiscussionButton";
+import React from "react";
+import FreeDiscussionButton from "../../components/FreeDiscussionButton"
 
 const ContactTitle = ({ isMeetingTitle }) => {
-  if(isMeetingTitle) {
+  if (isMeetingTitle) {
     return (
       <>
         <span className="inline-block px-3 py-1 mt-4 mb-2 mr-2 bg-accent text-white uppercase">
@@ -13,7 +12,7 @@ const ContactTitle = ({ isMeetingTitle }) => {
         </span>
         <span className="block md:inline-block uppercase"> with Our Team</span>
       </>
-    )
+    );
   }
 
   return (
@@ -21,23 +20,22 @@ const ContactTitle = ({ isMeetingTitle }) => {
       <span className="inline-block px-3 py-1 mt-4 mb-2 mr-2 bg-accent text-white uppercase">
         Free
       </span>
-      <span className="block md:inline-block uppercase">Confidential Discussion</span>
+      <span className="block md:inline-block uppercase">
+        Confidential Discussion
+      </span>
     </>
-  )
-}
+  );
+};
 
 const Contact = ({ isMeetingTitle }) => {
-  const data = useStaticQuery(graphql`
-    query {
-      site {
-        siteMetadata {
-          phoneNumber
-          phoneNumberFormat
-        }
-      }
-    }
-  `);
-
+  const data = {
+    site: {
+      siteMetadata: {
+        phoneNumber: "1300 123 123",
+        phoneNumberFormat: "1300 123 123",
+      },
+    },
+  };
   const { siteMetadata } = data.site;
 
   return (
@@ -69,11 +67,11 @@ const Contact = ({ isMeetingTitle }) => {
 };
 
 Contact.propTypes = {
-  isMeetingTitle: PropTypes.bool
+  isMeetingTitle: PropTypes.bool,
 };
 
 Contact.defaultProps = {
-  isMeetingTitle: false
+  isMeetingTitle: false,
 };
 
 export default Contact;

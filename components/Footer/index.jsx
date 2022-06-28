@@ -57,7 +57,7 @@ const Footer = () => {
                   alt="mail"
                 />
               </div>
-              <p className="pl-2 w-11/12">help@familylawassist.com.au</p>
+              <p className="pl-2 w-11/12 text-sm">help@familylawassist.com.au</p>
             </span>
             <br />
             <span className="flex items-center">
@@ -69,7 +69,7 @@ const Footer = () => {
                   alt="contact"
                 />
               </div>
-              <p className="pl-2 w-11/12">(08) 9470 2777</p>
+              <p className="pl-2 w-11/12 text-sm">(08) 9470 2777</p>
             </span>
           </div>
         </div>
@@ -77,81 +77,60 @@ const Footer = () => {
           <div className="xl:w-3/12 w-full mb-8 xl:mb-0">
             <p className="uppercase text-sm font-medium mb-8">Our Services</p>
             <div className="text-sm leading-8 pr-8">
-              <Link
-                className="text-sm"
-                href="/property-settlement-lawyers-perth"
-              >
+              <Link href="/property-settlement-lawyers-perth">
                 Property (Assets & Debts)
               </Link>
               <br />
-              <Link className="text-sm" href="/family-court-lawyers-perth">
+              <Link href="/family-court-lawyers-perth">
                 Property Dispute (Family Court)
               </Link>
               <br />
-              <Link className="text-sm" href="/divorce-lawyers-perth">
-                Divorce
-              </Link>
+              <Link href="/divorce-lawyers-perth">Divorce</Link>
               <br />
-              <Link className="text-sm" href="/separation-lawyers-perth">
-                Separation
-              </Link>
+              <Link href="/separation-lawyers-perth">Separation</Link>
               <br />
-              <Link
-                className="text-sm"
-                href="/child-custody-and-support-lawyers-perth"
-              >
+              <Link href="/child-custody-and-support-lawyers-perth">
                 Children
               </Link>
               <br />
-              <Link className="text-sm" href="/consent-orders-lawyers-perth">
-                Consent Orders
-              </Link>
+              <Link href="/consent-orders-lawyers-perth">Consent Orders</Link>
               <br />
-              <Link
-                className="text-sm"
-                href="/financial-agreements-lawyers-perth"
-              >
+              <Link href="/financial-agreements-lawyers-perth">
                 Financial Agreements
               </Link>
               <br />
-              <Link className="text-sm" href="/prenuptial-agreement-lawyers">
+              <Link href="/prenuptial-agreement-lawyers">
                 Prenuptial Agreement
               </Link>
               <br />
-              <Link className="text-sm" href="/mediation-lawyers-perth">
-                Mediation
-              </Link>
+              <Link href="/mediation-lawyers-perth">Mediation</Link>
               <br />
-              <Link className="text-sm" href="/same-sex-couples-lawyers-perth">
-                Same Sex
-              </Link>
+              <Link href="/same-sex-couples-lawyers-perth">Same Sex</Link>
               <br />
-              <Link className="text-sm" href="/de-facto-lawyers-perth">
-                DeFacto
-              </Link>
+              <Link href="/de-facto-lawyers-perth">DeFacto</Link>
               <br />
             </div>
           </div>
           <div className="xl:w-3/12 w-full mb-8 xl:mb-0">
             <p className="uppercase text-sm font-medium mb-8">Navigation</p>
             <p className="text-sm leading-8">
-              <Link className="text-sm" href="/">
+              <Link href="/">
                 Home
               </Link>
               <br />
-              <Link className="text-sm" href="/our-people">
+              <Link href="/our-people">
                 Our People
               </Link>
               <br />
-              <Link className="text-sm" href="/guide">
+              <Link href="/guide">
                 Step-by-Step Guide
               </Link>
               <br />
-              <Link className="text-sm" href="/information">
+              <Link href="/information">
                 Information
               </Link>
               <br />
-              <Link className="text-sm" href="/contact-us/">
+              <Link href="/contact-us/">
                 Contact Us
               </Link>
             </p>
@@ -182,26 +161,25 @@ const Footer = () => {
               />
             </div>
             <div className="flex mt-8 justify-start">
-            <div className="w-32">
-              <Image
-                src={QLD}
-                quality={90}
-                placeholder="blurred"
-                // height={150}
-                objectFit="contain"
-                alt="MKI Legal Logo"
-              />
-            </div>
-            <div className="w-64 ml-5">
-              <Image
-                src={NSW}
-                quality={90}
-                placeholder="blurred"
-                className="mb-6"
-                alt="MKI Legal Logo"
-              />
-            </div>
-
+              <div className="w-32">
+                <Image
+                  src={QLD}
+                  quality={90}
+                  placeholder="blurred"
+                  // height={150}
+                  objectFit="contain"
+                  alt="MKI Legal Logo"
+                />
+              </div>
+              <div className="w-64 ml-5">
+                <Image
+                  src={NSW}
+                  quality={90}
+                  placeholder="blurred"
+                  className="mb-6"
+                  alt="MKI Legal Logo"
+                />
+              </div>
             </div>
           </div>
         </div>

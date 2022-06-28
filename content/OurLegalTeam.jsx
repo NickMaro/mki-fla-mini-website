@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import AustraliaRegion from "../public/assets/team/whole-team.png";
+import AustraliaRegion from "../public/assets/team/MKI 2022 Desktop.png";
 
 export default function OurLegalTeam() {
   return (
