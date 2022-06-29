@@ -16,7 +16,7 @@ const HowItWorks = ({ children, title, linePadding }) => {
             linePadding
           )}
         >
-          <div className="w-1 md:w-2 bg-accent-600 h-full"></div>
+          <div className="w-1 md:w-2 bg-accent-600 h-full"/>
         </div>
         <div className="z-10 flex flex-col gap-6">
           {arr.map((item, i) => {
@@ -30,7 +30,6 @@ const HowItWorks = ({ children, title, linePadding }) => {
                     {i + 1}
                   </div>
                 </div>
-
                 {item}
               </div>
             );

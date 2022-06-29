@@ -71,7 +71,7 @@ const NavMobile = ({ phone, showNav, setShowNav }) => {
           "flex-col lg:flex-row flex-grow justify-center pl-0 mb-0 list-none mt-8 overflow-y-auto",
           {
             hidden: !showNav,
-            "flex transition-all delay-500": showNav,
+            "flex": showNav,
           }
         )}
       >
