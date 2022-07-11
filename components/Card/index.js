@@ -26,6 +26,7 @@ const Card = ({
   image,
   className,
   imageWrapperClass,
+  borderRadius="2xl"
 }) => {
   let imageOrder = "";
   let textOrder = "";
@@ -38,7 +39,7 @@ const Card = ({
   return (
     <div
       className={classNames(
-        "grid grid-cols-2 p-6 sm:p-0 shadow-lg overflow-hidden rounded-2xl",
+        `grid grid-cols-2 p-6 sm:p-0 shadow-lg overflow-hidden rounded-${borderRadius}`,
         { "mb-4 sm:mb-20": hasBottomMargin },
         className
       )}
