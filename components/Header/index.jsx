@@ -85,7 +85,7 @@ const NavMobile = ({ phone, showNav, setShowNav }) => {
           </li>
         ))}
         <button className="bg-primary text-white font-semibold text-lg rounded-md w-fit px-16 py-2.5 mx-4">
-          1300 123 123
+        1300 967 552
         </button>
       </ul>
     </div>
@@ -132,7 +132,7 @@ export default function Header() {
         <div className="items-center space-x-6 hidden lg:flex">
           {/* <p className="text-accent-600 text-lg font-semibold">Sign In</p> */}
           <button className="bg-primary text-white font-semibold text-lg rounded-md px-8 py-2.5">
-            1300 123 123
+          1300 967 552
           </button>
         </div>
       </section>

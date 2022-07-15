@@ -13,7 +13,7 @@ export default function GetInTouch({ isDiscussionFreeToShow = false }) {
       <div className="mt-16 max-w-4xl h-auto mx-auto">
         <div className="mx-auto flex flex-col justify-center items-center">
           <CallIcon />
-          <p className="mt-3 font-medium text-xl text-gray-600">1300 Number</p>
+          <p className="mt-3 font-medium text-xl text-gray-600">1300 967 552</p>
         </div>
         <div className="mx-auto flex flex-col justify-center items-center mt-20">
           <MailIcon />

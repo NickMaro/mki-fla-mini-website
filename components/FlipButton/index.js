@@ -17,8 +17,8 @@ const FlipButton = ({ className }) => {
   const data = {
     site: {
       siteMetadata: {
-        phoneNumber: "1300 123 123",
-        phoneNumberFormat: "1300 123 123",
+        phoneNumber: "1300 967 552",
+        phoneNumberFormat: "1300 967 552",
       },
     },
   };

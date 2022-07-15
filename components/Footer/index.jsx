@@ -72,7 +72,7 @@ const Footer = () => {
                   loading="lazy"
                 />
               </div>
-              <p className="pl-2 w-11/12 text-sm">(08) 9470 2777</p>
+              <p className="pl-2 w-11/12 text-sm">1300 967 552</p>
             </span>
           </div>
         </div>
