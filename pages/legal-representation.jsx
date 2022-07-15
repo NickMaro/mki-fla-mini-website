@@ -89,7 +89,7 @@ const SeparationNegotiation = () => {
             <div className="w-full h-auto relative">
               <Image
                 src={ItsExhausting}
-                quality={100}
+                quality={75}
                 placeholder="blurred"
                  layout="responsive"
                 objectFit="contain"
@@ -370,7 +370,7 @@ const SeparationNegotiation = () => {
                 <div className="flex">
                   <Image
                     src={HomeChildren}
-                    quality={100}
+                    quality={75}
                     layout="fill"
                     objectFit="contain"
                     placeholder="blurred"

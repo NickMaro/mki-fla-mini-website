@@ -75,7 +75,7 @@ const ConsentOrdersEssentials = ({ blog }) => {
               image={
                 <Image
                   src={AgreementReached}
-                  quality={100}
+                  quality={75}
                   placeholder="blurred"
                   layout="fill"
                   objectFit="cover"
@@ -196,7 +196,7 @@ const ConsentOrdersEssentials = ({ blog }) => {
               image={
                 <Image
                   src={NoSeriousDiscussion}
-                  quality={100}
+                  quality={75}
                   placeholder="blurred"
                   layout="fill"
                   objectFit="cover"
@@ -375,7 +375,7 @@ const ConsentOrdersEssentials = ({ blog }) => {
                 <div name="cross">
                   <p>
                     Extra $440 for each super fund being split (no charge if
-                    there's no super transfer)
+                    there is no super transfer)
                   </p>
                 </div>
 
@@ -455,7 +455,7 @@ const ConsentOrdersEssentials = ({ blog }) => {
               image={
                 <Image
                   src={ServicePropertySettle}
-                  quality={100}
+                  quality={75}
                   layout="fill"
                   objectFit="cover"
                   placeholder="blurred"
