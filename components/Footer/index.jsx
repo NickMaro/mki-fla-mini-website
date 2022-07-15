@@ -41,11 +41,11 @@ const Footer = () => {
 
           <div className="text-accent uppercase mb-4 text-sm">QLD Office:</div>
           <div className="text-sm leading-6 mb-6">
-            <span>QLD</span>
+            {/* <span>QLD</span>
+            <br /> */}
+            <span>Coming soon</span>
             <br />
-            <span>200 Adelaide Terrace</span>
-            <br />
-            <span>EAST PERTH WA 6004</span>
+            {/* <span>EAST PERTH WA 6004</span> */}
           </div>
 
           <div className="text-sm leading-4">
@@ -59,7 +59,9 @@ const Footer = () => {
                   loading="lazy"
                 />
               </div>
-              <p className="pl-2 w-11/12 text-sm">help@familylawassist.com.au</p>
+              <p className="pl-2 w-11/12 text-sm">
+                help@familylawassist.com.au
+              </p>
             </span>
             <br />
             <span className="flex items-center">
@@ -117,25 +119,15 @@ const Footer = () => {
           <div className="xl:w-3/12 w-full mb-8 xl:mb-0">
             <p className="uppercase text-sm font-medium mb-8">Navigation</p>
             <p className="text-sm leading-8">
-              <Link href="/">
-                Home
-              </Link>
+              <Link href="/">Home</Link>
               <br />
-              <Link href="/our-people">
-                Our People
-              </Link>
+              <Link href="/our-people">Our People</Link>
               <br />
-              <Link href="/guide">
-                Step-by-Step Guide
-              </Link>
+              <Link href="/guide">Step-by-Step Guide</Link>
               <br />
-              <Link href="/information">
-                Information
-              </Link>
+              <Link href="/information">Information</Link>
               <br />
-              <Link href="/contact-us/">
-                Contact Us
-              </Link>
+              <Link href="/contact-us/">Contact Us</Link>
             </p>
           </div>
           <div className="xl:w-6/12 w-full mb-8 xl:mb-0">
@@ -192,16 +184,22 @@ const Footer = () => {
       <div className="bg-dark-grey text-center p-3">
         <p className="text-sm">
           All Rights Reserved by MKI Legal. Use of this website subject to our{" "}
-          <Link className="text-sm underline" href="/terms-of-use/">
+          <Link
+            className="text-sm underline"
+            href="https://www.familylawassist.com.au/terms-of-use/"
+          >
             terms of use
           </Link>{" "}
           and{" "}
-          <Link className="text-sm underline" href="/privacy-policy/">
+          <Link
+            className="text-sm underline"
+            href="https://www.familylawassist.com.au/privacy-policy/"
+          >
             privacy policy
           </Link>
         </p>
       </div>
-      <div className="bg-accent text-center p-4 text-base">
+      {/* <div className="bg-accent text-center p-4 text-base">
         <p className="font-bold">PARTNER SITES</p>
         <a
           href="https://www.perthemploymentlawyers.com.au/"
@@ -210,7 +208,7 @@ const Footer = () => {
         >
           Perth Employment Lawyers
         </a>
-      </div>
+      </div> */}
     </footer>
   );
 };

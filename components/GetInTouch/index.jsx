@@ -53,11 +53,11 @@ export default function GetInTouch({ isDiscussionFreeToShow = false }) {
             <p className="mt-3 text-center font-medium text-xl text-gray-600">
               QLD
               <br />
-              Suite 1, Level 4,
-              <br />
+              Coming soon
+              {/* <br />
               200 Adelaide Terrace,
               <br />
-              EAST PERTH WA 6004
+              EAST PERTH WA 6004 */}
             </p>
           </div>
         </div>
