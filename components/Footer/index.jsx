@@ -82,37 +82,20 @@ const Footer = () => {
           <div className="xl:w-3/12 w-full mb-8 xl:mb-0">
             <p className="uppercase text-sm font-medium mb-8">Our Services</p>
             <div className="text-sm leading-8 pr-8">
-              <Link href="/property-settlement-lawyers-perth">
-                Property (Assets & Debts)
+              <Link href="/consent-orders">Consent orders online</Link>
+              <br />
+              <Link href="/send-an-offer">
+                Send an offer to your partner (free)
               </Link>
               <br />
-              <Link href="/family-court-lawyers-perth">
-                Property Dispute (Family Court)
+              <Link href="/legal-representation">Legal representation</Link>
+              <br />
+
+              <Link href="https://www.familylawassist.com.au">
+                View MKI Legal's full website
               </Link>
               <br />
-              <Link href="/divorce-lawyers-perth">Divorce</Link>
-              <br />
-              <Link href="/separation-lawyers-perth">Separation</Link>
-              <br />
-              <Link href="/child-custody-and-support-lawyers-perth">
-                Children
-              </Link>
-              <br />
-              <Link href="/consent-orders-lawyers-perth">Consent Orders</Link>
-              <br />
-              <Link href="/financial-agreements-lawyers-perth">
-                Financial Agreements
-              </Link>
-              <br />
-              <Link href="/prenuptial-agreement-lawyers">
-                Prenuptial Agreement
-              </Link>
-              <br />
-              <Link href="/mediation-lawyers-perth">Mediation</Link>
-              <br />
-              <Link href="/same-sex-couples-lawyers-perth">Same Sex</Link>
-              <br />
-              <Link href="/de-facto-lawyers-perth">DeFacto</Link>
+
               <br />
             </div>
           </div>
@@ -121,13 +104,9 @@ const Footer = () => {
             <p className="text-sm leading-8">
               <Link href="/">Home</Link>
               <br />
-              <Link href="/our-people">Our People</Link>
+              <Link href="/about-us">About Us</Link>
               <br />
-              <Link href="/guide">Step-by-Step Guide</Link>
-              <br />
-              <Link href="/information">Information</Link>
-              <br />
-              <Link href="/contact-us/">Contact Us</Link>
+              <Link href="/contact-us">Contact Us</Link>
             </p>
           </div>
           <div className="xl:w-6/12 w-full mb-8 xl:mb-0">
@@ -182,7 +161,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="bg-dark-grey text-center p-3">
-        <p className="text-sm">
+        <p className="text-sm text-white">
           All Rights Reserved by MKI Legal. Use of this website subject to our{" "}
           <Link
             className="text-sm underline"

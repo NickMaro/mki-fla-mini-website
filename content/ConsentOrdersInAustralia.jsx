@@ -4,6 +4,7 @@ import Line2 from "../public/assets/images/Line-2.png";
 import Line3 from "../public/assets/images/Capa-1.png";
 
 import SS from "../public/assets/images/Group-557.png";
+import Link from "next/link";
 
 export default function ConsentOrdersInAustralia() {
   return (
@@ -45,32 +46,29 @@ export default function ConsentOrdersInAustralia() {
                 alt="Meagan"
                 loading="lazy"
               />
-
-              <button className="bg-primary text-white font-semibold text-lg rounded-md w-full py-3 mt-4">
-                Get Started
-              </button>
+              <Link href="/consent-orders">
+                <button className="bg-primary text-white font-semibold text-lg rounded-md w-full py-3 mt-4">
+                  Get Started
+                </button>
+              </Link>
             </div>
             <div className="mx-auto col-span-2 lg:col-span-1">
               <p className="text-gray-500 text-xl font-normal">
-                The employment law system in Australia is separated into either
-                a State-based employment system or a Federal employment system.
+                Consent orders are vital to make the agreement you’ve reached
+                with your former partner legally binding. If you don’t make the
+                agreement legally binding, then your partner can change their
+                mind later on (even if you’re signed a document such as a
+                statutory declaration).
                 <br />
                 <br />
-                In Western Australia, you are likely in the Federal system if
-                you work for a company, the Federal government, a not-for-profit
-                that sells goods or services (as oppose to relying entirely on
-                donations or grants) or certain local councils.
+                Our family lawyers will prepare your consent orders and lodge
+                them with the court on your behalf. Our service costs a fraction
+                of what other lawyers charge. We collect the necessary
+                information both online and during a discussion with a family
+                lawyer. Contact us today to have a free discussion with our
+                legal team about consent orders.
                 <br />
                 <br />
-                <span className="font-semibold text-gray-600">
-                  Most employees in Australia fall under the Federal system.
-                </span>
-                <br />
-                <br />
-                The employment relationship is governed in a variety of ways
-                including private contracts between employer and employee,
-                awards which apply to specific industries, enterprise bargaining
-                agreements and legislation such as the Fair Work Act.
               </p>
             </div>
           </div>
