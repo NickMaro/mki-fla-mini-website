@@ -25,7 +25,7 @@ const HeroImage = ({
         <div className="absolute inset-0">
           <Slider {...settings}>
             {bgImages.map((bgImage, i) => (
-              <div className="absolute">
+              <div className="absolute" key={i}>
                 <Image
                   key={`heroBgImage-${i}`}
                   src={bgImage}

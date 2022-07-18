@@ -53,7 +53,7 @@ const ConsentOrderService = () => {
               image={
                 <Image
                   src={WhatAreConsentOrders}
-                  quality={90}
+                  quality={75}
                   layout="fill"
                   objectFit="cover"
                   placeholder="blurred"
@@ -72,7 +72,7 @@ const ConsentOrderService = () => {
               <p>
                 The agreement could be in relation to parenting such as for
                 example who the child lives with, who the child spends time
-                with, limitations on travel and other children's issues.
+                with, limitations on travel and other parenting issues.
               </p>
               <br />
               <p>
@@ -145,7 +145,7 @@ const ConsentOrderService = () => {
                   src={WhatDoWeNeedFromYou}
                   layout="fill"
                   objectFit="cover"
-                  quality={100}
+                  quality={75}
                   placeholder="blurred"
                   alt="Get family law advice on Consent Orders"
                 />
@@ -491,7 +491,7 @@ const ConsentOrderService = () => {
       <section className="w-full h-80 overflow-hidden relative">
         <Image
           src={WhatCanIIncludeInMyConsentOrders}
-          quality={100}
+          quality={75}
           layout="fill"
           objectFit="cover"
           placeholder="blurred"
@@ -595,7 +595,7 @@ const ConsentOrderService = () => {
               image={
                 <Image
                   src={ConsentOrdersHero}
-                  quality={100}
+                  quality={75}
                   placeholder="blurred"
                   layout="fill"
                   objectFit="cover"

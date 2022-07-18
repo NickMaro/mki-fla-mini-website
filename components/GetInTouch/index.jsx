@@ -13,7 +13,7 @@ export default function GetInTouch({ isDiscussionFreeToShow = false }) {
       <div className="mt-16 max-w-4xl h-auto mx-auto">
         <div className="mx-auto flex flex-col justify-center items-center">
           <CallIcon />
-          <p className="mt-3 font-medium text-xl text-gray-600">1300 Number</p>
+          <p className="mt-3 font-medium text-xl text-gray-600">1300 967 552</p>
         </div>
         <div className="mx-auto flex flex-col justify-center items-center mt-20">
           <MailIcon />
@@ -53,11 +53,11 @@ export default function GetInTouch({ isDiscussionFreeToShow = false }) {
             <p className="mt-3 text-center font-medium text-xl text-gray-600">
               QLD
               <br />
-              Suite 1, Level 4,
-              <br />
+              Coming soon
+              {/* <br />
               200 Adelaide Terrace,
               <br />
-              EAST PERTH WA 6004
+              EAST PERTH WA 6004 */}
             </p>
           </div>
         </div>

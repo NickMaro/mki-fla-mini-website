@@ -62,7 +62,7 @@ const SendAnOffer = () => {
         <div className="w-1/2 h-auto absolute left-0">
           <Image
             src={Line2}
-            quality={90}
+            quality={75}
             placeholder="blurred"
             alt="line-2"
             height={500}
@@ -72,7 +72,7 @@ const SendAnOffer = () => {
         <div className="w-1/2 absolute right-0">
           <Image
             src={Line3}
-            quality={90}
+            quality={75}
             placeholder="blurred"
             alt="line-3"
             height={500}
@@ -88,7 +88,7 @@ const SendAnOffer = () => {
               <div className="mx-auto col-span-2 lg:col-span-1">
                 <Image
                   src={SS}
-                  quality={90}
+                  quality={75}
                   placeholder="blurred"
                   alt="Meagan"
                   loading="lazy"
@@ -403,7 +403,7 @@ const SendAnOffer = () => {
                 <div className="col-span-7 lg:col-span-3 relative px-12">
                   <Image
                     src={Group_634}
-                    quality={90}
+                    quality={75}
                     placeholder="blurred"
                     alt="Meagan"
                     loading="lazy"

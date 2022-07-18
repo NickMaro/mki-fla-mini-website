@@ -93,7 +93,7 @@ export default function WeWillRepresentYou() {
         </div>
       </div>
       <button className="bg-primary text-white font-semibold text-lg rounded-md w-5/6 md:w-1/3 py-3 mt-20 mx-auto block">
-        1300 123 123
+      1300 967 552
       </button>
     </section>
   );

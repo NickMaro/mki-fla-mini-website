@@ -75,7 +75,7 @@ const ConsentOrdersEssentials = ({ blog }) => {
               image={
                 <Image
                   src={AgreementReached}
-                  quality={100}
+                  quality={75}
                   placeholder="blurred"
                   layout="fill"
                   objectFit="cover"
@@ -159,9 +159,10 @@ const ConsentOrdersEssentials = ({ blog }) => {
               <div>
                 <p>
                   <b>Documents prepared.</b> Our experienced family lawyers will
-                  draft your Form 11 Application for Consent Orders on your
-                  behalf. No more wasting your time painfully trying to read
-                  through the many government websites and templates.{" "}
+                  draft your Application for Consent Orders (including the
+                  minute) on your behalf. No more wasting your time painfully
+                  trying to read through the many government websites and
+                  templates.{" "}
                 </p>
               </div>
               <div>
@@ -196,7 +197,7 @@ const ConsentOrdersEssentials = ({ blog }) => {
               image={
                 <Image
                   src={NoSeriousDiscussion}
-                  quality={100}
+                  quality={75}
                   placeholder="blurred"
                   layout="fill"
                   objectFit="cover"
@@ -240,6 +241,8 @@ const ConsentOrdersEssentials = ({ blog }) => {
                   Peace of mind that the relationship is over - it’s time to
                   move on!
                 </li>
+
+                <li>We will lodge the signed documents with the court.</li>
               </ul>
             </Content>
           </div>
@@ -251,27 +254,49 @@ const ConsentOrdersEssentials = ({ blog }) => {
             <h2 className="font-bold uppercase mb-6">
               What happens if you don’t Get consent orders?
             </h2>
-            <Card className="bg-red-600 bg-opacity-20 text-center">
+            <Card className="bg-red-600 bg-opacity-20 text-left" title="">
               <p>
                 <b>Warning!</b>
               </p>
               <br />
               <p>
-                Getting Consent Orders, or a Binding Financial Agreement, are
-                the only ways to make your agreement legally binding!
+                If you’ve reached an agreement with your former partner, There
+                are only 2 ways to make it legally binding:
+                <ol className="list-decimal">
+                  <li className="ml-8 pl-3"> Getting consent orders.</li>
+                  <li className="ml-8 pl-3">
+                    {" "}
+                    Signing a Binding Financial Agreement (<b>BFA</b>).{" "}
+                  </li>
+                </ol>
               </p>
               <br />
               <p>
-                Consent Orders are more affordable than a BFA, which is often
-                very specific on how things are split. BFA’s are more expensive,
-                yet both provide certainty on your agreement.
+                Signing a piece of paper, statutory declaration or affidavit
+                does not make it legally binding.
+                <br />
+                <br />
+                Consent Orders cost less than a BFA so they’re the ideal
+                situation for lots of people.
+                <br />
+                <br />
+                Without consent orders or a BFA, your partner can simply change
+                their mind (no matter what you've signed). In this case, they
+                can go after you for more.
+                <br />
+                <br />
+                Delaying making your agreement legally binding (e.g. signing
+                consent orders) can also be risky. The court will look at the
+                assets you both have now (not at separation). So if you receive
+                an inheritance, your property increases in value, you win the
+                lotto, your business increases in value, you earn more money,
+                you get a redundancy or you get a pay-out after you’ve separated
+                - your partner can go after those extra assets.
+                <br />≈ There are also deadlines that apply to financalising
+                your property split. If you fall outside the deadline, you might
+                be prevented from getting anything (we discuss this in more
+                detail below).
               </p>{" "}
-              <br />
-              <p>
-                Without a binding agreement in place, your former partner can
-                demand more assets or money in the future - and they’re allowed
-                to if your original agreement isn’t legally binding.
-              </p>
               <br />
               <p>Protect yourself, and get consent orders now.</p>
             </Card>
@@ -299,6 +324,22 @@ const ConsentOrdersEssentials = ({ blog }) => {
               </p>
               <br />
               <p>
+                If you go to another law firm, you can easily be charged $4,000
+                to $5,000 to get Consent Orders. In some states, we’ve seen
+                firms charging over $6,000 for Consent Orders!
+              </p>
+              <br />
+              <p>
+                We focus on the essentials. We’ll get the documents and
+                lodgement done, without the costly extras that you probably
+                don’t need…
+              </p>
+              <br />
+              <p>
+                We specialise in Consent Orders Applications, so we’re able to
+                offer cost effective, affordable services.{" "}
+              </p>
+              <p>
                 By submitting some of your own information online, you save time
                 and money on meetings with lawyers working out details. We don’t
                 need to sit down and charge you to go over trivial things like
@@ -312,7 +353,7 @@ const ConsentOrdersEssentials = ({ blog }) => {
               </p>
               <br />
               <p>
-                Most firms charge by time - but we’re not most firms! Enjoy a
+                Most firms charge by time - but we’re not most firms. Enjoy a
                 fixed-fee outcome with transparent pricing - starting from just
                 $990!*
               </p>
@@ -375,7 +416,7 @@ const ConsentOrdersEssentials = ({ blog }) => {
                 <div name="cross">
                   <p>
                     Extra $440 for each super fund being split (no charge if
-                    there's no super transfer)
+                    there is no super transfer)
                   </p>
                 </div>
 
@@ -421,13 +462,13 @@ const ConsentOrdersEssentials = ({ blog }) => {
                   </p>
                 </div>
 
-                <div name="footnote">
+                {/* <div name="footnote">
                   <Link href="/consent-orders-lawyers-perth">
                     <p className="underline text-xl pt-2">
                       view our Full Service option.
                     </p>
                   </Link>
-                </div>
+                </div> */}
               </NewPricing>
             </div>
             <div className="w-full md:w-4/12">
@@ -439,6 +480,116 @@ const ConsentOrdersEssentials = ({ blog }) => {
                 formButtonName="homepage-hero"
               />
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="section-white">
+        <div className="custom-container">
+          <div className="flex flex-col text-center items-center">
+            <h2 className="font-bold uppercase mb-4">
+              Why consent orders can be difficult (without legal help)?
+            </h2>
+            <Card className=" text-left" title="">
+              <br />
+              <p className="underline italic">
+                Why it's so hard without a lawyer
+              </p>
+              <br />
+              <p>
+                {" "}
+                <span className="font-semibold">
+                  “We found the process difficult, bordering on distressing”
+                </span>{" "}
+                - what an MKI Legal Client thought{" "}
+                <span className="font-semibold">before</span> they used us.
+              </p>
+              <br />
+              <p>
+                The application for consent orders has over 50 complex
+                questions. Then there is the Minute. The Minute is the most
+                important part of your consent orders application… You have to
+                get the Minute right as it documents exactly how your assets and
+                debts will be divided, and what your legal obligations are -
+                lots of people mess this part up completely.
+              </p>
+              <br />
+              <p>
+                Many people even submit the Consent Orders application to the
+                court only to get rejected. If you get it wrong, that’s more
+                time and more stress added to the process…
+                <br />
+                <br />
+                It’s already stressful enough to separate and then reach an
+                agreement… The final stage is making sure the agreement is
+                recorded legally. This is the most important part!
+                <br />
+                <br />
+                It is a difficult document, a lot of people struggle to wrap
+                their head around it.
+                <br />
+                <br />
+                You really want to make sure it's done correctly. When dividing
+                everything you own, including your home and all the
+                superannuation that you’ve worked hard to accumulate, it’s
+                important to get it sorted properly. If not, you may miss out on
+                assets and money. Your partner may walk away with more, with you
+                getting less. You may even try it yourself and get rejected by
+                the courts, costing you even more in the long run.
+                <br />
+                <br />
+                With MKI Legal, we take care of it and cut what you don’t need
+                out.
+                <br />
+                <br />
+                You’ll get your Consent Orders done right, with assistance on
+                the process and lodgement.
+                <br />
+                <br />
+                Save time, money, and get your agreement recorded properly...
+                It’s not just filling out the court form, it’s the minute,
+                lodgement with the court, and so on.
+                <br />
+                <br />
+                <span className="italic">
+                  {" "}
+                  Simply put, if you stuff it up, you lose out.
+                </span>
+              </p>{" "}
+              <br />
+              <p>
+                We reduce stress and make it easier for you to deal with… We
+                take care of it for you. Having a lawyer do it for you just
+                makes it all easier.
+              </p>
+              <br />
+              <p className="underline italic">Can I do it myself?</p>
+              <br />
+              <p>
+                {" "}
+                <span className="font-semibold">
+                  “One of the most complex things I’ve seen”
+                </span>{" "}
+                - what people tell us when trying to complete the application
+                for consent orders documents{" "}
+                <span className="font-semibold">themselves</span>.
+              </p>
+              <br />
+              <p>
+                A lot of our clients tell us that the application for consent
+                orders (or Form 11 in WA) is “one of the most complex things
+                they’ve seen”. Many who attempt the 20+ page court document
+                struggle to fill it out, or don’t know where to even start. Many
+                struggle to get their head around the minute as well (or are not
+                even aware that a minute is needed). Some clients have told us,
+                “We tried to do it ourselves but just couldn't’.{" "}
+              </p>
+              <br />
+              <p>
+                It’s simply best to get it done right by an expert who knows
+                what they’re doing.{" "}
+              </p>
+            </Card>
           </div>
         </div>
       </section>
@@ -456,7 +607,7 @@ const ConsentOrdersEssentials = ({ blog }) => {
               image={
                 <Image
                   src={ServicePropertySettle}
-                  quality={100}
+                  quality={75}
                   layout="fill"
                   objectFit="cover"
                   placeholder="blurred"

@@ -37,11 +37,11 @@ const team = [
 ];
 
 const PeopleList = ({ people }) => {
-  return people.map((d) => {
+  return people.map((d, i) => {
     const { path, name, position } = d;
 
     return (
-      <div className="col-span-3 px-4 mb-12 flex flex-col items-center">
+      <div key={i} className="col-span-3 px-4 mb-12 flex flex-col items-center">
         <div className="mb-4 px-12 xl:px-24">
           <Image
             src={path}

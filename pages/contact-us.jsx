@@ -19,7 +19,7 @@ const ContactUs = () => {
               <h3>
                 Fill In Your Details And <br />
                 We’ll Call You Back, <br />
-                or Call Us On <b>(08) 9470 2777</b> <br />
+                or Call Us On <b>1300 967 552</b> <br />
               </h3>
             </div>
             <div className="w-full lg:w-8/12 xl:w-7/12 p-6 rounded-lg md:shadow-lg ">
