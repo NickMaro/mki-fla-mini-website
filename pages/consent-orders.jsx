@@ -559,7 +559,7 @@ const ConsentOrdersEssentials = ({ blog }) => {
               <p>
                 We reduce stress and make it easier for you to deal with… We
                 take care of it for you. Having a lawyer do it for you just
-                makes it all easier. .
+                makes it all easier.
               </p>
               <br />
               <p className="underline italic">Can I do it myself?</p>
