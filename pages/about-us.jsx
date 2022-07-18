@@ -15,8 +15,8 @@ import TeamDesktop from "../public/assets/team/MKI 2022 Desktop.png";
 import TeamMobile from "../public/assets/team/MKI 2022 Mobile.png";
 
 import Image from "next/image";
-import Contact from "../components/Contact";
-import Featured from "../components/Featured";
+// import Contact from "../components/Contact";
+// import Featured from "../components/Featured";
 import DefaultLayout from "layouts/BaseLayout";
 
 const team = [
@@ -104,13 +104,13 @@ const AboutUS = () => {
         </div>
       </section>
 
-      <section id="contact" className="section-grey">
+      {/* <section id="contact" className="section-grey">
         <Contact isMeetingTitle={true} />
       </section>
 
       <section className="section-grey">
         <Featured />
-      </section>
+      </section> */}
     </DefaultLayout>
   );
 };

@@ -85,12 +85,14 @@ module.exports = {
         "-150": "-1.5",
       },
       zIndex: {
-        '1': '-1',
-      }
+        1: "-1",
+      },
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      display: ["group-hover"],
+    },
   },
   plugins: [],
 };

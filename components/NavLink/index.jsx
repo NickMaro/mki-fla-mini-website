@@ -4,6 +4,7 @@ import FreeDiscussionButton from "components/FreeDiscussionButton";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import classNames from "classnames";
+import ServicesMenu from "../Header/ServicesMenu";
 
 const NavLink = ({
   to,
@@ -12,10 +13,31 @@ const NavLink = ({
   formButtonName = "",
   text,
   type = "",
+  hasSubNav = false,
 }) => {
   const router = useRouter();
 
   switch (type) {
+    case "services":
+      return (
+        <div
+          className={classNames(
+            "group relative",
+            {
+              "nav-link nav-active-link text-white bg-accent":
+                router.pathname === to,
+              "nav-link text-black hover:text-white hover:bg-accent":
+                router.pathname !== to,
+              "hoverable text-black": hasSubNav,
+            },
+            className
+          )}
+        >
+          {text}
+          <ServicesMenu />
+        </div>
+      );
+
     case "external":
       return (
         <a href={to} className={className} target="_blank" rel="noreferrer">

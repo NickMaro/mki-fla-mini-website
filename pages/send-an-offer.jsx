@@ -324,17 +324,19 @@ const SendAnOffer = () => {
           <div className="flex flex-col text-center items-center">
             <h2 className="font-bold uppercase mb-6">Time limits</h2>
             <Card className="bg-transparenttext-left shadow-none relative">
-              <p className="text-left">
-                The Court sets strict separation deadlines. If you are ‘Out of
-                Time’, you could potentially miss out on dividing assets and
-                have to seek permissions from the Court in order to divide
-                everything.
-                <br />
-                <br />
-                We’ve worked with clients who came to an agreement but never did
-                anything beyond that. Years later, they have tried to finalise
-                their agreement which is now a number of years old. The issues
-                are:
+              <>
+                <p className="text-left">
+                  The Court sets strict separation deadlines. If you are ‘Out of
+                  Time’, you could potentially miss out on dividing assets and
+                  have to seek permissions from the Court in order to divide
+                  everything.
+                  <br />
+                  <br />
+                  We’ve worked with clients who came to an agreement but never
+                  did anything beyond that. Years later, they have tried to
+                  finalise their agreement which is now a number of years old.
+                  The issues are:
+                </p>
                 <ul className="my-6 list-disc pl-12">
                   <li>
                     The value of assets (including increases in super or a
@@ -357,7 +359,7 @@ const SendAnOffer = () => {
                     contributed. This results in more costs to you.
                   </li>
                 </ul>
-              </p>
+              </>
 
               <p className="font-bold my-6 text-left">
                 Here are the time limits:
@@ -393,7 +395,10 @@ const SendAnOffer = () => {
         <div className="custom-container">
           <div className="flex flex-col text-center items-center">
             <h2 className="font-bold uppercase mb-10">Why Is It Free?</h2>
-            <Card className="text-left relative bg-white shadow-md" borderRadius="lg">
+            <Card
+              className="text-left relative bg-white shadow-md"
+              borderRadius="lg"
+            >
               <div className="grid grid-cols-7 gap-12">
                 <div className="col-span-7 lg:col-span-3 relative px-12">
                   <Image

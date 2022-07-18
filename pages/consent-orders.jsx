@@ -318,12 +318,12 @@ const ConsentOrdersEssentials = ({ blog }) => {
               </p>
               <br />
             </div>
-            <div className="flex flex-col md:flex-row items-start justify-center gap-8 mb-8 ">
+            <div className="grid grid-cols-2 md:flex-row items-start justify-center gap-8 mb-8 ">
               <NewPricing
                 theme="accent"
                 title="Essentials Package"
                 subtitle="From $990*"
-                className="w-full"
+                className="col-span-2 md:col-span-1"
               >
                 <div name="tick">
                   <p>Consent Orders for Property Division</p>
@@ -387,6 +387,7 @@ const ConsentOrdersEssentials = ({ blog }) => {
                 theme="gray"
                 title="Full Service"
                 subtitle="Contact Us"
+                className="col-span-2 md:col-span-1"
               >
                 <div name="tick">
                   <p>
@@ -422,7 +423,7 @@ const ConsentOrdersEssentials = ({ blog }) => {
 
                 <div name="footnote">
                   <Link href="/consent-orders-lawyers-perth">
-                    <p className="underline text-xl">
+                    <p className="underline text-xl pt-2">
                       view our Full Service option.
                     </p>
                   </Link>

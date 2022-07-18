@@ -127,7 +127,6 @@ const LegalAdviceCards = () => {
                   you important information such as:
                 </p>
                 <br />
-                <p>
                   <ul className="list-disc pl-6">
                     <li className="mb-4">
                       What a fair division of the assets of the relationship
@@ -145,7 +144,6 @@ const LegalAdviceCards = () => {
                       <br />
                     </li>
                   </ul>
-                </p>
               </Card>
             </div>
           </div>
@@ -160,7 +158,6 @@ const LegalAdviceCards = () => {
                   might have, such as:
                 </p>
                 <br />
-                <p>
                   <ul className="list-disc pl-6">
                     <li className="mb-4">
                       How do I divide superannuation interests?
@@ -192,7 +189,6 @@ const LegalAdviceCards = () => {
                       resolve our family law issues?
                     </li>
                   </ul>
-                </p>
               </Card>
               <div className="hidden xl:block">
                 <div className="transform scale-150 -translate-y-14">

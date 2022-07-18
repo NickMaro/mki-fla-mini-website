@@ -9,7 +9,7 @@ const NewPricing = ({ children, theme, title, subtitle, className }) => {
   const childrenArr = Children.toArray(children);
   const footnote = childrenArr.find((items) => items.props.name === "footnote");
   return (
-    <div className="flex flex-col gap-4 justify-start">
+    <>
       <div
         className={classNames(
           "rounded-md w-full flex-col shadow-md",
@@ -53,8 +53,8 @@ const NewPricing = ({ children, theme, title, subtitle, className }) => {
           })}
         </div>
       </div>
-      {!!footnote && footnote}
-    </div>
+      {/* {!!footnote && footnote} */}
+    </>
   );
 };
 
