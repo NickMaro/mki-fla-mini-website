@@ -2,7 +2,7 @@ import React from "react";
 
 const CallPhone = () => {
   return (
-    <a href="1300 123 123" id="callPhoneNumber" className="px-4">
+    <a href="tel:+611300967552" id="callPhoneNumber" className="px-4">
       <div className="flex items-center">
         <svg
           width="25"
@@ -27,7 +27,7 @@ const CallPhone = () => {
             Free Discussion
           </div>
           <div className="font-semibold text-base" id="callPhoneNumberText">
-            1300 123 123
+            1300 967 552
           </div>
         </div>
       </div>

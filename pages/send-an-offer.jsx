@@ -6,7 +6,6 @@ import Featured from "components/Featured";
 import Card from "components/Card";
 import Hero from "components/Hero";
 
-import ProperLinkModal from "components/NavLink";
 import LegalTeam from "components/LegalTeam";
 
 import Line2 from "../public/assets/images/Line-2.png";
@@ -31,7 +30,7 @@ const SendAnOffer = () => {
             </span>
             <span className="block text-center">
               <span className="inline-block bg-accent p-2 my-2 text-white">
-                Take The First Step in Reaching a Resolution
+                Send A Proposal To Your Ex
               </span>
             </span>
           </h1>
@@ -39,18 +38,17 @@ const SendAnOffer = () => {
         <div className="w-full lg:w-7/12 mx-auto mb-12 font-medium text-center">
           <h3 className="text-center">
             Negotiation is an ongoing process. The most important step is to get
-            started...
+            started. So we've created an online tool to allow you to send your
+            former partner a proposal on how to divide your assets and debts.
           </h3>
         </div>
         <div className="flex justify-center w-full">
           <div className="w-full md:w-4/12">
-            <ProperLinkModal
-              text="Get Started now"
-              to="/"
-              type="modal"
-              className="btn block w-full btn-primary btn-modal"
-              formButtonName="homepage-hero"
-            />
+            <Link href="https://app.familylawassist.com.au/">
+              <button className="bg-primary text-white font-semibold text-lg rounded-md w-full py-3 mt-12 mx-auto block">
+                Send A Proposal Now
+              </button>
+            </Link>
           </div>
         </div>
       </Hero>
@@ -113,13 +111,11 @@ const SendAnOffer = () => {
 
                 <div className="flex justify-center w-full mt-12">
                   <div className="w-full">
-                    <ProperLinkModal
-                      text="Get Started now"
-                      to="/"
-                      type="modal"
-                      className="btn block w-full btn-primary btn-modal"
-                      formButtonName="homepage-hero"
-                    />
+                    <Link href="https://app.familylawassist.com.au/">
+                      <button className="bg-primary text-white font-semibold text-lg rounded-md w-full py-3 mt-12 mx-auto block">
+                        Get Started Now
+                      </button>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -143,8 +139,7 @@ const SendAnOffer = () => {
                 <br />
                 So what's in the offer? The offer will outline what assets you
                 want to keep, what you want to give to your partner, and what
-                you propose to sell and split. We set that out in a proposal,
-                along with a formal letter from MKI Legal explaining the process
+                you propose to sell and split. We'll also explain the process
                 and some legal queries you may both have.
                 <br />
                 <br />
@@ -170,29 +165,27 @@ const SendAnOffer = () => {
                 and send it to your former partner for review.
                 <br />
                 <br />
-                Your former partner then gets an email from us, inviting them to
-                read the negotiation letter and view your off`er.
+                Your former partner then gets an email from our online system,
+                inviting them to read the negotiation letter and view your
+                offer.
                 <br />
                 <br />
                 You don't have to send anything to them, or even communicate
-                with them! We will send it directly to them.
+                with them! Our online system will send it directly to them.
                 <br />
                 <br />
                 Your partner will have the opportunity to either accept the
                 offer, or decline it (with feedback). Only your partner can view
-                the offer, as we include an easy security authentication just
-                for them.
+                the offer by securely signing in with their email.
               </p>
             </Card>
             <div className="flex justify-center w-full">
               <div className="w-full md:w-4/12">
-                <ProperLinkModal
-                  text="Get Started now"
-                  to="/"
-                  type="modal"
-                  className="btn block w-full btn-primary btn-modal"
-                  formButtonName="homepage-hero"
-                />
+                <Link href="https://app.familylawassist.com.au/">
+                  <button className="bg-primary text-white font-semibold text-lg rounded-md w-full py-3 mt-12 mx-auto block">
+                    Get Started Now
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -273,13 +266,11 @@ const SendAnOffer = () => {
             </Card>
             <div className="flex justify-center w-full">
               <div className="w-full md:w-4/12">
-                <ProperLinkModal
-                  text="Get Started now"
-                  to="/"
-                  type="modal"
-                  className="btn block w-full btn-primary btn-modal"
-                  formButtonName="homepage-hero"
-                />
+                <Link href="https://app.familylawassist.com.au/">
+                  <button className="bg-primary text-white font-semibold text-lg rounded-md w-full py-3 mt-12 mx-auto block">
+                    Get Started Now
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -321,7 +312,7 @@ const SendAnOffer = () => {
       </section>
       <section className="section-white bg-white relative">
         <div className="custom-container">
-          <div className="flex flex-col text-center items-center">
+          <div className="flex flex-col text-left items-center">
             <h2 className="font-bold uppercase mb-6">Time limits</h2>
             <Card className="bg-transparenttext-left shadow-none relative">
               <>
@@ -347,27 +338,30 @@ const SendAnOffer = () => {
                   </li>
 
                   <li>
-                    Certain assets may be sold, disposed of or diminished. Years
-                    later, there may be no equity in a property and you are both
-                    responsible for the shortfall or your former partner could
-                    increase arrears on a joint mortgage, and may make you
-                    liable for more and affecting your credit rating.
+                    Certain assets may be sold, disposed of or diminished.
+                  </li>
+                  <li>
+                    Years later, there may be no equity in a property, which may
+                    mean you're both responsible for the shortfall. Your former
+                    partner could increase the arrears on a joint mortgage,
+                    potentially making you liable for more and affecting your
+                    credit rating.
                   </li>
                   <li>
                     The process becomes more complicated as lawyers need to look
                     at how things have changed and how you each have
-                    contributed. This results in more costs to you.
+                    contributed. Delaying could result in more costs to you.
                   </li>
                 </ul>
               </>
 
               <p className="font-bold my-6 text-left">
-                Here are the time limits:
+                Here are the time limits you need to be aware of:
               </p>
               <ul className="my-6 list-disc pl-12 text-left">
                 <li>
                   You have 2 years after separation if you are a de-facto couple
-                  (living together but not married), or;
+                  (living together but not married), or
                 </li>
 
                 <li>
@@ -412,26 +406,30 @@ const SendAnOffer = () => {
                 <div className="mx-auto col-span-7 lg:col-span-4">
                   <p>
                     We want to help make it easier for people to divide their
-                    assets and deal with separation. We have great expertise in
-                    the areas of family law and separation, as well as building
-                    technology that makes people's lives easier. It’s free (and
-                    risk free!) for a limited time, so it's easier than ever to
-                    get started.
+                    assets and deal with separation. We have lots of expertise
+                    in the areas of family law and separation, as well as
+                    building technology that makes people's lives easier. It’s
+                    free (and risk free!) for a limited time, so it's easier
+                    than ever to get started.
                     <br />
                     <br />
                     Don’t miss out on our free negotiation tool! In the future,
                     this will be a paid service.
+                    <br />
+                    <br />
+                    The letter will be sent on your behalf. However, there will
+                    not be any lawyer-client relationship created with us by
+                    using our services. It's purely a do-it-yourself online
+                    tool.
                   </p>
 
                   <div className="flex justify-center w-full mt-12">
                     <div className="w-full">
-                      <ProperLinkModal
-                        text="Get Started now"
-                        to="/"
-                        type="modal"
-                        className="btn block w-full btn-primary btn-modal"
-                        formButtonName="homepage-hero"
-                      />
+                      <Link href="https://app.familylawassist.com.au/">
+                        <button className="bg-primary text-white font-semibold text-lg rounded-md w-full py-3 mt-12 mx-auto block">
+                          Get Started Now
+                        </button>
+                      </Link>
                     </div>
                   </div>
                 </div>

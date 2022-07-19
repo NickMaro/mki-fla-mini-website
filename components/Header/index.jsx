@@ -6,9 +6,10 @@ import Link from "next/link";
 import { HiMenu } from "react-icons/hi";
 import classNames from "classnames";
 import CallPhone from "./CallPhone";
-
+import ProperLink from "./ProperLink";
+import ProperLinkModal from "components/NavLink";
 const navLinks = [
-  { path: "services", name: "Our Sevices", hasSubNav: true, type: "services" },
+  { path: "services", name: "Our Services", hasSubNav: true, type: "services" },
   { path: "/send-an-offer", name: "Send an Offer" },
   { path: "/about-us", name: "About Us", hasSubNav: false },
   { path: "/contact-us", name: "Contact Us", hasSubNav: false },
@@ -93,14 +94,14 @@ const NavMobile = ({ phone, showNav, setShowNav }) => {
           </li>
         ))}
         <li className="px-8">
-          <p className="text-accent-600 text-lg font-semibold mt-2">Sign In</p>
+          <ProperLink to="https://app.familylawassist.com.au/">
+            <p className="text-accent-600 text-lg font-semibold cursor-pointer border-accent-600 border-2 px-5 py-1  hover:bg-accent hover:text-white  w-40		">
+              Sign In
+            </p>
+          </ProperLink>
+
           <CallPhone />
         </li>
-        {/* <li>
-          <button className="bg-primary text-white font-semibold text-lg rounded-sm w-fit px-16 py-2.5 mx-4">
-            1300 123 123
-          </button>
-        </li> */}
       </ul>
     </div>
   );
@@ -147,12 +148,24 @@ export default function Header() {
         <NavMobile showNav={showNav} setShowNav={setShowNav} />
 
         <div className="items-center space-x-6 hidden xl:flex">
-          <p className="text-accent-600 text-lg font-semibold">Sign In</p>
+          <ProperLink to="https://app.familylawassist.com.au/">
+            <p className="text-accent-600 text-lg font-semibold cursor-pointer border-accent-600 border-2 px-5 py-1  hover:bg-accent hover:text-white">
+              Sign In
+            </p>
+          </ProperLink>
+
           <CallPhone />
 
-          <button className="bg-primary text-white font-semibold text-md rounded-sm px-5 py-2.5">
+          <ProperLinkModal
+            text="Free Discussion"
+            to="/"
+            type="modal"
+            className="bg-primary text-white font-semibold text-md rounded-sm px-5 py-2.5"
+            formButtonName="homepage-hero"
+          />
+          {/* <button className="bg-primary text-white font-semibold text-md rounded-sm px-5 py-2.5">
             Get In Touch
-          </button>
+          </button> */}
         </div>
       </section>
     </nav>

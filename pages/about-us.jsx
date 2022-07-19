@@ -32,8 +32,8 @@ const team = [
   { path: Meagan, name: "MEAGAN HILLIER", position: "Lawyer" },
   { path: Esther, name: "ESTHER POWER", position: "Lawyer" },
   { path: Abdul, name: "ABDUL AL ASADI", position: "Lawyer" },
-  { path: Jessie, name: "Jessie", position: "Lawyer" },
-  { path: Badreiya, name: "BADREIYA MOOSA-PITT", position: "Lawyer" },
+  { path: Jessie, name: "Jessie", position: "Paralegal" },
+  { path: Badreiya, name: "BADREIYA MOOSA-PITT", position: "Paralegal" },
 ];
 
 const PeopleList = ({ people }) => {
@@ -45,14 +45,16 @@ const PeopleList = ({ people }) => {
         <div className="mb-4 px-12 xl:px-24">
           <Image
             src={path}
-            quality={90}
+            quality={75}
             placeholder="blurred"
             className="mb-6"
             alt={name}
             loading="lazy"
           />
         </div>
-        <h3 className="font-bold uppercase mb-4 text-2xl">{name}</h3>
+        <h3 className="font-bold uppercase mb-4 md:text-xl text-2xl text-center">
+          {name}
+        </h3>
         <p className="mb-4 text-lg">{position}</p>
       </div>
     );
@@ -99,7 +101,7 @@ const AboutUS = () => {
       </section>
 
       <section className="bg-white pb-12 md:py-24 container mx-auto">
-        <div className="grid grid-cols-9 gap-12">
+        <div className="grid grid-cols-3 md:grid-cols-9 gap-12 ">
           <PeopleList people={team} />
         </div>
       </section>

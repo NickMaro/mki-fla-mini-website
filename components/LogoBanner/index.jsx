@@ -6,7 +6,7 @@ import Logo3 from "../../public/assets/logo/image-5.png";
 
 export default function LogoBanner() {
   return (
-    <div className="bg-blue-600 px-20 py-10 flex items-center justify-around">
+    <div className="bg-accent-600 px-20 py-10 flex items-center justify-around">
       <div className="custom-container grid grid-cols-3 gap-12">
         <div className="col-span-3 md:col-span-1 flex flex-col justify-center items-center">
           <Image
