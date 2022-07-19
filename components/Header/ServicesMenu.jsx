@@ -9,7 +9,7 @@ const services = [
 const ServicesMenu = () => {
   return (
     <div className="hidden group-hover:block absolute left-0">
-      <div class="up-arrow ml-7 mt-3" />
+      <div className="up-arrow ml-7 mt-3" />
       <div className="sm:mb-0 bg-accent text-white shadow-xl w-64 p-5">
         {services.map((service, i) => (
           <div
