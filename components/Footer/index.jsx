@@ -59,9 +59,9 @@ const Footer = () => {
                   loading="lazy"
                 />
               </div>
-              <p className="pl-2 w-11/12 text-sm">
+              <a href="mailto:help@familylawassist.com.au" className="pl-2 w-11/12 text-sm">
                 help@familylawassist.com.au
-              </p>
+              </a>
             </span>
             <br />
             <span className="flex items-center">
@@ -74,7 +74,7 @@ const Footer = () => {
                   loading="lazy"
                 />
               </div>
-              <p className="pl-2 w-11/12 text-sm">1300 967 552</p>
+              <a href="tel:+611300967552" className="pl-2 w-11/12 text-sm">1300 967 552</a>
             </span>
           </div>
         </div>

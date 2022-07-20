@@ -1,5 +1,6 @@
 import React from "react";
 import { CallIcon, LocationIcon, MailIcon } from "components/Svgs";
+import ProperLinkModal from "components/NavLink";
 
 export default function GetInTouch({ isDiscussionFreeToShow = false }) {
   return (
@@ -61,12 +62,6 @@ export default function GetInTouch({ isDiscussionFreeToShow = false }) {
             </p>
           </div>
         </div>
-
-        {isDiscussionFreeToShow ? (
-          <button className="bg-primary text-white font-semibold text-lg rounded-md w-5/6 lg:w-5/12 py-3 mt-20 mx-auto block">
-            Free Discussion
-          </button>
-        ) : null}
       </div>
     </section>
   );

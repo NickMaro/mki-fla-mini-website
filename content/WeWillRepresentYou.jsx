@@ -3,6 +3,7 @@ import Image from "next/image";
 import Meagan from "../public/assets/images/meagan.png";
 import ColorBg from "../public/assets/images/Group-545.png";
 import Vector from "../public/assets/images/vector.png";
+import Link from "next/link";
 
 import Nick from "../public/assets/team/nick.png";
 
@@ -40,7 +41,6 @@ export default function WeWillRepresentYou() {
             loading="lazy"
           />
         </div>
-        
 
         <h5 className="text-left text-lg font-bold text-blue-500 uppercase mb-5 tracking-wider">
           MKI LEGAL
@@ -56,18 +56,24 @@ export default function WeWillRepresentYou() {
               </h1>
 
               <p className="text-xl text-gray-500">
-                A Senior employment lawyer will be involved in your matter so
-                you can rest assured you are getting accurate and reliable
-                advice.
+                Get the right legal advice on where you stand. We can help you
+                understand your options and legal position regarding splitting
+                your assets, going through a divorce, or caring for your
+                children.
                 <br />
                 <br />
-                A Senior employment lawyer will be involved in your matter so
-                you can rest assured you are getting accurate and reliable
-                advice.
+                The lawyers you will be speaking to specialise only in family
+                law. That means you will receive expert advice on your matter.
+                It’s important you clearly understand the complexities of your
+                situation, and our lawyers are here to help you with that.
+                Knowing how the system works and your place in it will relieve
+                stress about the process, and you’ll be better equipped to
+                navigate the often overwhelming family law space.
                 <br />
-                <br />A Senior employment lawyer will be involved in your matter
-                so you can rest assured you are getting accurate and reliable
-                advice.
+                <br />
+                Speak to our team for a free discussion about your situation,
+                and get personalised advice and guidance to help you move
+                forward effectively.
               </p>
             </div>
             <div className="mx-auto col-span-2 md:col-span-1">
@@ -75,26 +81,36 @@ export default function WeWillRepresentYou() {
                 Negotiation Service
               </h1>
               <p className="text-xl text-gray-500">
-                We provide the best value service in our industry. We are
-                confident that our cost structure and rates are better than any
-                other employment law firm in Perth, without sacrificing quality.
-                Our expertise is in employment law, so we can deliver a far
-                better service at a far better price.
+                It’s not always easy negotiating with your former partner…
                 <br />
                 <br />
-                We provide the best value service in our industry. We are
-                confident that our cost structure and rates are better than any
-                other employment law firm in Perth, without sacrificing quality.
-                Our expertise is in employment law, so we can deliver a far
-                better service at a far better price.
+                MKI Legal can help you in reaching an agreement you’re happy
+                with. We’ll work directly with your former partner to
+                communicate what assets and debts you want to keep, split or
+                sell.
+                <br />
+                <br />
+                Our team will arrange disclosure of financial information with
+                you and your former partner. We'll even handle communication
+                with your ex, and their lawyers if needed - so you don’t have
+                to.
+                <br />
+                <br />
+                Reached an agreement already? Congratulations! We can even
+                assist you in making it legally binding.
               </p>{" "}
             </div>
           </div>
+          <Link href="/legal-representation">
+            <button className="bg-primary text-white font-semibold text-lg rounded-md w-full md:w-1/2 py-3 px-5 mt-12">
+              Get Started
+            </button>
+          </Link>
         </div>
       </div>
-      <button className="bg-primary text-white font-semibold text-lg rounded-md w-5/6 md:w-1/3 py-3 mt-20 mx-auto block">
+      {/* <button className="bg-primary text-white font-semibold text-lg rounded-md w-5/6 md:w-1/3 py-3 mt-20 mx-auto block">
       1300 967 552
-      </button>
+      </button> */}
     </section>
   );
 }

@@ -22,7 +22,7 @@ export default function MostPopularOnlineServices() {
         </div>
         <div className="mt-16 custom-container h-auto mx-auto relative grid grid-cols-2 gap-10 md:gap-20 xl:gap-56">
           <article className="bg-white shadow-lg rounded-xl overflow-hidden col-span-2 md:col-span-1">
-            <div className="bg-accent text-white p-8 text-center text-xl">
+            <div className="bg-accent text-white p-8 text-center text-xl  font-bold">
               Send a Negotiation Letter (Free)
             </div>
 
@@ -72,8 +72,8 @@ export default function MostPopularOnlineServices() {
           </article>
 
           <article className="bg-white shadow-lg rounded-xl overflow-hidden col-span-2 md:col-span-1">
-            <div className="bg-accent text-white p-8 text-center text-xl">
-              Consent Orders from $999
+            <div className="bg-accent text-white p-8 text-center text-xl font-bold">
+              Consent Orders from $990
             </div>
 
             <div className="p-8 lg:p-16 py-8">
