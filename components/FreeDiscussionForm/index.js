@@ -78,7 +78,7 @@ const FreeDiscussionForm = ({ isHidden, closeModal, name }) => {
       onSubmit={handleSubmit(onSubmit)}
     >
       <input
-        name="form-name" // this is the test for netfliy form
+        name="form-name"
         type="hidden"
         value="direct-free-discussion-form"
         {...register("form-name")}
