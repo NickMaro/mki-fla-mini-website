@@ -69,7 +69,7 @@ const FreeDiscussionForm = ({ isHidden, closeModal, name }) => {
         hidden: isHidden,
       })}
       data-netlify="true"
-      data-netlify-recaptcha="true"
+      // data-netlify-recaptcha="true"
       netlify-honeypot="bot-field"
       ref={freeDiscussionForm}
       name="direct-free-discussion-form"
