@@ -120,6 +120,7 @@ const FreeDiscussionForm = ({ isHidden, closeModal, name }) => {
       // ref={freeDiscussionForm}
       name="direct-free-discussion-form-v2"
       onSubmit={handleSubmit(onSubmit)}
+      action="/success"
     >
       <input
         name="form-name" // this is the test for netfliy form
