@@ -73,8 +73,12 @@ const FreeDiscussionForm = ({ isHidden, closeModal, name }) => {
     onSubmit={handleSubmit}
     className="w-full md:w-2/3"
   >
-    <input type="hidden" name="form-name" value="direct-free-discussion-form" />
-
+    {/* <input type="hidden" name="form-name" value="direct-free-discussion-form" /> */}
+    <p class="hidden">
+    <label>
+      Don’t fill this out if you’re human: <input name="bot-field" />
+    </label>
+  </p>
     <input
       name="email"
       type="email"
@@ -93,11 +97,7 @@ const FreeDiscussionForm = ({ isHidden, closeModal, name }) => {
     >
       {error}
     </p>
-    <p className="hidden">
-      <label>
-        Don’t fill this out if you’re human: <input name="bot-field" />
-      </label>
-    </p>
+    
 
     <button
       type="submit"
