@@ -50,7 +50,7 @@ const FreeDiscussionForm = ({ isHidden, closeModal, name }) => {
           if (willCloseModal) {
             closeModal();
           } else {
-            freeDiscussionForm.current.reset();
+            // freeDiscussionForm.current.reset();
           }
         });
       })
@@ -71,7 +71,7 @@ const FreeDiscussionForm = ({ isHidden, closeModal, name }) => {
       data-netlify="true"
       // data-netlify-recaptcha="true"
       netlify-honeypot="bot-field"
-      ref={freeDiscussionForm}
+      // ref={freeDiscussionForm}
       name="direct-free-discussion-form"
       onSubmit={handleSubmit(onSubmit)}
     >
@@ -164,7 +164,7 @@ const FreeDiscussionForm = ({ isHidden, closeModal, name }) => {
           </span>
         )}
       </div>
-      <div className="w-full mb-2">
+      {/* <div className="w-full mb-2">
         <Recaptcha
           ref={recaptchaRef}
           sitekey={RECAPTCHA_KEY}
@@ -172,10 +172,11 @@ const FreeDiscussionForm = ({ isHidden, closeModal, name }) => {
           id="recaptcha-google"
           onChange={() => setButtonDisabled(false)}
         />
-      </div>
+      </div> */}
       <button
+      type="submit"
         className={classNames("btn btn-primary w-full", buttonName)}
-        disabled={buttonDisabled}
+        // disabled={buttonDisabled}
       >
         Send
       </button>
