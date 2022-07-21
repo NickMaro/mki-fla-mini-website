@@ -40,7 +40,7 @@ const FreeDiscussionForm = ({ isHidden, closeModal, name }) => {
       }),
     })
       .then((res) => {
-        console.log("form subm",res)
+        console.log("form subm", res);
         swal({
           title: "Thank You!",
           text: "We Have Received Your Enquiry",
@@ -68,9 +68,9 @@ const FreeDiscussionForm = ({ isHidden, closeModal, name }) => {
       className={classNames("contact-form", {
         hidden: isHidden,
       })}
-      data-netlify="true"
       data-netlify-recaptcha="true"
-      data-netlify-honeypot="field-buffer-guard"
+      data-netlify="true"
+      // data-netlify-honeypot="field-buffer-guard"
       ref={freeDiscussionForm}
       name="direct-free-discussion-form"
       onSubmit={handleSubmit(onSubmit)}
@@ -81,13 +81,13 @@ const FreeDiscussionForm = ({ isHidden, closeModal, name }) => {
         value="direct-free-discussion-form"
         {...register("form-name")}
       />
-      <div className="hidden">
+      {/* <div className="hidden">
         <label>
           Don’t fill this out if you’re human:{" "}
           <input name="field-buffer-guard" />
         </label>
       </div>
-      <input type="hidden" {...register("formUrl")} value="" />
+      <input type="hidden" {...register("formUrl")} value="" /> */}
       {/* Client First Name */}
       <div className="mb-2 p-0">
         <input
@@ -177,6 +177,7 @@ const FreeDiscussionForm = ({ isHidden, closeModal, name }) => {
         />
       </div>
       <button
+        type="submit"
         className={classNames("btn btn-primary w-full", buttonName)}
         disabled={buttonDisabled}
       >
