@@ -11,7 +11,7 @@ const encode = (data) => {
     .join("&");
 };
 
-const RECAPTCHA_KEY = "6Lcac30bAAAAAG59_ff0nQna52HYesgLS7g1IDQ-";
+const RECAPTCHA_KEY = "6LcrbwohAAAAAJtot0nuBfDwPcgk-_kBPjClAYZW";
 
 const FreeDiscussionForm = ({ isHidden, closeModal, name }) => {
   const {
