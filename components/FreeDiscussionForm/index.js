@@ -39,7 +39,9 @@ const FreeDiscussionForm = ({ isHidden, closeModal, name }) => {
         ...payload,
       }),
     })
-      .then(() => {
+      .then((res) => {
+        console.log("form subm",res)
+
         swal({
           title: "Thank You!",
           text: "We Have Received Your Enquiry",
@@ -75,7 +77,7 @@ const FreeDiscussionForm = ({ isHidden, closeModal, name }) => {
       onSubmit={handleSubmit(onSubmit)}
     >
       <input
-        name="form-name" // this is the test for netfliy form
+         name="direct-free-discussion-form"
         type="hidden"
         value="direct-free-discussion-form"
         {...register("form-name")}
