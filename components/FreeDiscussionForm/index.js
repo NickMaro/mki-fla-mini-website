@@ -66,14 +66,14 @@ const FreeDiscussionForm = ({ isHidden, closeModal, name }) => {
 
   return (
     <form
-    name="direct-free-discussion-form"
+    name="discussion-form"
     method="POST"
     data-netlify="true"
     netlify-honeypot="bot-field"
     onSubmit={handleSubmit}
     className="w-full md:w-2/3"
   >
-    {/* <input type="hidden" name="form-name" value="direct-free-discussion-form" /> */}
+    <input type="hidden" name="form-name" value="discussion-form" />
     <p className="hidden">
     <label>
       Don’t fill this out if you’re human: <input name="bot-field" />
