@@ -56,6 +56,7 @@ const FreeDiscussionForm = ({ isHidden, closeModal, name }) => {
           // setCurrentStep(2);
         })
         .catch((error) => {
+          console.log(error)
           setIsSubmitting(false);
           alert(error);
         });
@@ -69,11 +70,11 @@ const FreeDiscussionForm = ({ isHidden, closeModal, name }) => {
     name="discussion-form"
     method="POST"
     data-netlify="true"
-    netlify-honeypot="bot-field"
+    data-netlify-honeypot="bot-field"
     onSubmit={handleSubmit}
     className="w-full md:w-2/3"
   >
-    <input type="hidden" name="form-name" value="discussion-form" />
+    {/* <input type="hidden" name="form-name" value="discussion-form" /> */}
     <p className="hidden">
     <label>
       Don’t fill this out if you’re human: <input name="bot-field" />
