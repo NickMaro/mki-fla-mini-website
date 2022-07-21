@@ -67,19 +67,19 @@ const FreeDiscussionForm = ({ isHidden, closeModal, name }) => {
 
   return (
     <form
-    name="discussion-form"
+    name="dis-form"
     method="POST"
     data-netlify="true"
-    netlify-honeypot="bot-field"
+    data-netlify-honeypot="bot-field"
     onSubmit={handleSubmit}
     className="w-full md:w-2/3"
   >
-    {/* <input type="hidden" name="form-name" value="discussion-form" /> */}
-    {/* <p className="hidden">
+    <input type="hidden" name="form-name" value="dis-form" />
+    <p hidden>
     <label>
       Don’t fill this out if you’re human: <input name="bot-field" />
     </label>
-  </p> */}
+  </p>
     <input
       name="email"
       type="email"
