@@ -20,9 +20,11 @@ const FreeDiscussionForm = ({ isHidden, closeModal, name }) => {
     formState: { errors },
   } = useForm();
   const freeDiscussionForm = useRef(null);
-  const buttonName = `free-discussion-${name}`;
   const recaptchaRef = useRef(null);
   const [buttonDisabled, setButtonDisabled] = useState(true);
+
+  const buttonName = `free-discussion-${name}`;
+
 
   const onSubmit = (data) => {
     const payload = {
@@ -68,8 +70,8 @@ const FreeDiscussionForm = ({ isHidden, closeModal, name }) => {
       className={classNames("contact-form", {
         hidden: isHidden,
       })}
-      data-netlify-recaptcha="true"
-      data-netlify="true"
+      // data-netlify-recaptcha="true"
+      // data-netlify="true"
       // data-netlify-honeypot="field-buffer-guard"
       ref={freeDiscussionForm}
       name="direct-free-discussion-form"
