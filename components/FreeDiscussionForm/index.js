@@ -75,11 +75,11 @@ const FreeDiscussionForm = ({ isHidden, closeModal, name }) => {
     className="w-full md:w-2/3"
   >
     <input type="hidden" name="form-name" value="discussion-form" />
-    <p className="hidden">
+    {/* <p className="hidden">
     <label>
       Don’t fill this out if you’re human: <input name="bot-field" />
     </label>
-  </p>
+  </p> */}
     <input
       name="email"
       type="email"
