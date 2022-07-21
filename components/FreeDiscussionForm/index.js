@@ -173,7 +173,7 @@ const FreeDiscussionForm = ({ isHidden, closeModal, name }) => {
         name="form-name" // this is the test for netfliy form
         type="hidden"
         value="direct-free-discussion-form"
-        // {...register("form-name")}
+         {...register("form-name")}
       />
       <div className="hidden">
         <input name="bot-field" />
