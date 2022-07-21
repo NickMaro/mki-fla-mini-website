@@ -36,7 +36,7 @@ const FreeDiscussionForm = ({ isHidden, closeModal, name }) => {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({
-        "g-recaptcha-response": recaptchaValue,
+        // "g-recaptcha-response": recaptchaValue,
         ...payload,
       }),
     })
@@ -86,7 +86,7 @@ const FreeDiscussionForm = ({ isHidden, closeModal, name }) => {
         <input name="bot-field" />
       </div>
       {/* <input type="hidden" {...register("formUrl")} value="" />  */}
-      {/* Client First Name
+      Client First Name
       <div className="mb-2 p-0">
         <input
           type="text"
@@ -100,7 +100,7 @@ const FreeDiscussionForm = ({ isHidden, closeModal, name }) => {
         )}
       </div>
 
-      {/* Client Surname */}
+      {/* Client Surname
       <div className="mb-2 p-0">
         <input
           type="text"
