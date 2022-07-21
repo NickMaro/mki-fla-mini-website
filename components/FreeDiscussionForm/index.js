@@ -3,7 +3,7 @@ import swal from "sweetalert";
 import PropTypes from "prop-types";
 import { useForm } from "react-hook-form";
 import classNames from "classnames";
-import Recaptcha from "react-google-recaptcha";
+// import Recaptcha from "react-google-recaptcha";
 
 const encode = (data) => {
   return Object.keys(data)
@@ -29,7 +29,7 @@ const FreeDiscussionForm = ({ isHidden, closeModal, name }) => {
       ...data,
       formUrl: window.location.href,
     };
-    const recaptchaValue = recaptchaRef.current.getValue();
+    // const recaptchaValue = recaptchaRef.current.getValue();
     // post data using fetch to submit data properly
     fetch("/", {
       method: "POST",
