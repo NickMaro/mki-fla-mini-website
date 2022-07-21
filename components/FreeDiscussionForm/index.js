@@ -25,7 +25,6 @@ const FreeDiscussionForm = ({ isHidden, closeModal, name }) => {
 
   const buttonName = `free-discussion-${name}`;
 
-
   const onSubmit = (data) => {
     const payload = {
       ...data,
@@ -71,8 +70,8 @@ const FreeDiscussionForm = ({ isHidden, closeModal, name }) => {
         hidden: isHidden,
       })}
       // data-netlify-recaptcha="true"
-      // data-netlify="true"
-      // data-netlify-honeypot="field-buffer-guard"
+      data-netlify="true"
+      data-netlify-honeypot="bot-field"
       ref={freeDiscussionForm}
       name="direct-free-discussion-form"
       onSubmit={handleSubmit(onSubmit)}
@@ -83,14 +82,11 @@ const FreeDiscussionForm = ({ isHidden, closeModal, name }) => {
         value="direct-free-discussion-form"
         {...register("form-name")}
       />
-      {/* <div className="hidden">
-        <label>
-          Don’t fill this out if you’re human:{" "}
-          <input name="field-buffer-guard" />
-        </label>
+      <div className="hidden">
+        <input name="bot-field" />
       </div>
-      <input type="hidden" {...register("formUrl")} value="" /> */}
-      {/* Client First Name */}
+      {/* <input type="hidden" {...register("formUrl")} value="" />  */}
+      {/* Client First Name
       <div className="mb-2 p-0">
         <input
           type="text"
