@@ -1,7 +1,3 @@
-import React from 'react'
-
-export default function success() {
-  return (
-    <div>success</div>
-  )
-}
+export default function Success() {
+    return <div>Form successfully submitted!</div>
+  }
