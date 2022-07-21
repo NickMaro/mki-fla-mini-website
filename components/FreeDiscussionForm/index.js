@@ -40,7 +40,7 @@ const FreeDiscussionForm = ({ isHidden, closeModal, name }) => {
       }),
     })
       .then((res) => {
-        console.log("form subm",res)
+        console.log("form subm", res);
 
         swal({
           title: "Thank You!",
@@ -71,13 +71,12 @@ const FreeDiscussionForm = ({ isHidden, closeModal, name }) => {
       })}
       data-netlify="true"
       data-netlify-recaptcha="true"
-      netlify-honeypot="field-buffer-guard"
+      // netlify-honeypot="field-buffer-guard"
       ref={freeDiscussionForm}
       name="direct-free-discussion-form"
       onSubmit={handleSubmit(onSubmit)}
     >
       <input
-         name="direct-free-discussion-form"
         type="hidden"
         value="direct-free-discussion-form"
         {...register("form-name")}
