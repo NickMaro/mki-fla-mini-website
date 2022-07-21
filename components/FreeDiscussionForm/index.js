@@ -69,6 +69,7 @@ const FreeDiscussionForm = ({ isHidden, closeModal, name }) => {
     <form
     name="discussion-form"
     method="POST"
+    netlify
     data-netlify="true"
     data-netlify-honeypot="bot-field"
     onSubmit={handleSubmit}
