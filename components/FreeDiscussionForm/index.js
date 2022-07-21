@@ -25,11 +25,13 @@ const FreeDiscussionForm = ({ isHidden, closeModal, name }) => {
   const [buttonDisabled, setButtonDisabled] = useState(true);
 
   const onSubmit = (data) => {
+    console.log("first")
+
     const payload = {
       ...data,
       formUrl: window.location.href,
     };
-    const recaptchaValue = recaptchaRef.current.getValue();
+    // const recaptchaValue = recaptchaRef.current.getValue();
     // post data using fetch to submit data properly
     fetch("/", {
       method: "POST",
@@ -63,7 +65,7 @@ const FreeDiscussionForm = ({ isHidden, closeModal, name }) => {
         })
       );
   };
-
+console.log(errors)
   return (
     <form
       className={classNames("contact-form", {
@@ -78,16 +80,24 @@ const FreeDiscussionForm = ({ isHidden, closeModal, name }) => {
     >
       <input
         type="hidden"
+        name="form-name"
         value="direct-free-discussion-form"
         {...register("form-name")}
+
       />
+
+      {/* <input
+        type="hidden"
+        value="direct-free-discussion-form"
+        {...register("form-name")}
+      /> */}
       {/* <div className="hidden">
         <label>
           Don’t fill this out if you’re human:{" "}
           <input name="field-buffer-guard" />
         </label>
       </div> */}
-      <input type="hidden" {...register("formUrl")} value="" />
+      {/* <input type="hidden" {...register("formUrl")} value="" /> */}
       {/* Client First Name */}
       <div className="mb-2 p-0">
         <input
@@ -177,8 +187,9 @@ const FreeDiscussionForm = ({ isHidden, closeModal, name }) => {
         />
       </div> */}
       <button
+      type="submit"
         className={classNames("btn btn-primary w-full", buttonName)}
-        disabled={buttonDisabled}
+        // disabled={buttonDisabled}
       >
         Send
       </button>
