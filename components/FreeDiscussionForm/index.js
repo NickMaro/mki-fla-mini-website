@@ -11,7 +11,7 @@ const encode = (data) => {
     .join("&");
 };
 
-const RECAPTCHA_KEY = "6LcrbwohAAAAAJtot0nuBfDwPcgk-_kBPjClAYZW";
+const RECAPTCHA_KEY = "6Lcac30bAAAAAG59_ff0nQna52HYesgLS7g1IDQ-";
 
 const FreeDiscussionForm = ({ isHidden, closeModal, name }) => {
   const {
@@ -20,10 +20,9 @@ const FreeDiscussionForm = ({ isHidden, closeModal, name }) => {
     formState: { errors },
   } = useForm();
   const freeDiscussionForm = useRef(null);
+  const buttonName = `free-discussion-${name}`;
   const recaptchaRef = useRef(null);
   const [buttonDisabled, setButtonDisabled] = useState(true);
-
-  const buttonName = `free-discussion-${name}`;
 
   const onSubmit = (data) => {
     const payload = {
@@ -38,10 +37,10 @@ const FreeDiscussionForm = ({ isHidden, closeModal, name }) => {
       body: encode({
         // "g-recaptcha-response": recaptchaValue,
         ...payload,
+        "form-name": "direct-free-discussion-form",
       }),
     })
-      .then((res) => {
-        console.log("form subm", res);
+      .then(() => {
         swal({
           title: "Thank You!",
           text: "We Have Received Your Enquiry",
@@ -69,24 +68,24 @@ const FreeDiscussionForm = ({ isHidden, closeModal, name }) => {
       className={classNames("contact-form", {
         hidden: isHidden,
       })}
-      // data-netlify-recaptcha="true"
       data-netlify="true"
-      data-netlify-honeypot="bot-field"
+      data-netlify-recaptcha="true"
+      netlify-honeypot="bot-field"
       ref={freeDiscussionForm}
       name="direct-free-discussion-form"
       onSubmit={handleSubmit(onSubmit)}
     >
       <input
-        name="form-name"
+        name="form-name" // this is the test for netfliy form
         type="hidden"
         value="direct-free-discussion-form"
-        {...register("form-name")}
+        // {...register("form-name")}
       />
       <div className="hidden">
         <input name="bot-field" />
       </div>
-      {/* <input type="hidden" {...register("formUrl")} value="" />  */}
-      Client First Name
+      {/* <input type="hidden" {...register("formUrl")} value="" /> */}
+      {/* Client First Name */}
       <div className="mb-2 p-0">
         <input
           type="text"
@@ -100,7 +99,7 @@ const FreeDiscussionForm = ({ isHidden, closeModal, name }) => {
         )}
       </div>
 
-      {/* Client Surname
+      {/* Client Surname */}
       <div className="mb-2 p-0">
         <input
           type="text"
@@ -175,7 +174,6 @@ const FreeDiscussionForm = ({ isHidden, closeModal, name }) => {
         />
       </div>
       <button
-        type="submit"
         className={classNames("btn btn-primary w-full", buttonName)}
         disabled={buttonDisabled}
       >
