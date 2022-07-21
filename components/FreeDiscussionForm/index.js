@@ -70,7 +70,7 @@ const FreeDiscussionForm = ({ isHidden, closeModal, name }) => {
       name="discussion-form"
       method="POST"
       data-netlify="true"
-      action="/"
+      action="/success"
       netlify-honeypot="bot-field"
       onSubmit={handleSubmit}
       className="w-full md:w-2/3"
