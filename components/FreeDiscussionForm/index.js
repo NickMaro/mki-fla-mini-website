@@ -11,7 +11,7 @@ const encode = (data) => {
     .join("&");
 };
 
-const RECAPTCHA_KEY = "6Lcac30bAAAAAG59_ff0nQna52HYesgLS7g1IDQ-";
+const RECAPTCHA_KEY = "6LfKMAohAAAAALg2jA1FaEtZ7-nPc2WpM6m3xBDi";
 
 const FreeDiscussionForm = ({ isHidden, closeModal, name }) => {
   const {
@@ -71,9 +71,7 @@ const FreeDiscussionForm = ({ isHidden, closeModal, name }) => {
       })}
       data-netlify="true"
       data-netlify-recaptcha="true"
-      // netlify-honeypot="field-buffer-guard"
-      netlify-honeypot="bot-field"
-
+      netlify-honeypot="field-buffer-guard"
       ref={freeDiscussionForm}
       name="direct-free-discussion-form"
       onSubmit={handleSubmit(onSubmit)}
