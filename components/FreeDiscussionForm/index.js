@@ -78,7 +78,8 @@ const FreeDiscussionForm = ({ isHidden, closeModal, name }) => {
   const onSubmit = data => {
     const payload = {
       ...data,
-      formUrl: window.location.href,
+      // formUrl: window.location.href,
+      "form-name":"direct-free-discussion-form"
     }
     // const recaptchaValue = recaptchaRef.current.getValue()
     // post data using fetch to submit data properly
@@ -173,7 +174,7 @@ const FreeDiscussionForm = ({ isHidden, closeModal, name }) => {
         name="form-name" // this is the test for netfliy form
         type="hidden"
         value="direct-free-discussion-form"
-         {...register("form-name")}
+        //  {...register("form-name")}
       />
       <div className="hidden">
         <input name="bot-field" />
