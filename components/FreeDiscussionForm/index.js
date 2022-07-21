@@ -97,13 +97,7 @@ const FreeDiscussionForm = ({ isHidden, closeModal, name }) => {
           text: "We Have Received Your Enquiry",
           icon: "success",
           button: "Close",
-        }).then(willCloseModal => {
-          if (willCloseModal) {
-            closeModal();
-          } else {
-            freeDiscussionForm.current.reset();
-          }
-        });
+        })
       })
       .catch(error =>
         swal({
