@@ -5,9 +5,9 @@ import { useForm } from "react-hook-form";
 import classNames from "classnames";
 import Recaptcha from "react-google-recaptcha";
 
-const encode = data => {
+const encode = (data) => {
   return Object.keys(data)
-    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
     .join("&");
 };
 
@@ -24,18 +24,18 @@ const FreeDiscussionForm = ({ isHidden, closeModal, name }) => {
   const recaptchaRef = useRef(null);
   const [buttonDisabled, setButtonDisabled] = useState(true);
 
-  const onSubmit = data => {
+  const onSubmit = (data) => {
     const payload = {
       ...data,
       formUrl: window.location.href,
-    }
-    const recaptchaValue = recaptchaRef.current.getValue()
+    };
+    const recaptchaValue = recaptchaRef.current.getValue();
     // post data using fetch to submit data properly
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({
-        'g-recaptcha-response': recaptchaValue,
+        "g-recaptcha-response": recaptchaValue,
         ...payload,
       }),
     })
@@ -45,7 +45,7 @@ const FreeDiscussionForm = ({ isHidden, closeModal, name }) => {
           text: "We Have Received Your Enquiry",
           icon: "success",
           button: "Close",
-        }).then(willCloseModal => {
+        }).then((willCloseModal) => {
           if (willCloseModal) {
             closeModal();
           } else {
@@ -53,7 +53,7 @@ const FreeDiscussionForm = ({ isHidden, closeModal, name }) => {
           }
         });
       })
-      .catch(error =>
+      .catch((error) =>
         swal({
           title: "Oops!",
           text: "Something went wrong.",
@@ -75,20 +75,18 @@ const FreeDiscussionForm = ({ isHidden, closeModal, name }) => {
       onSubmit={handleSubmit(onSubmit)}
     >
       <input
+        name="form-name" // this is the test for netfliy form
         type="hidden"
         value="direct-free-discussion-form"
         {...register("form-name")}
       />
       <div className="hidden">
         <label>
-          Don’t fill this out if you’re human: <input name="field-buffer-guard" />
+          Don’t fill this out if you’re human:{" "}
+          <input name="field-buffer-guard" />
         </label>
       </div>
-      <input
-        type="hidden"
-        {...register("formUrl")}
-        value=""
-      />
+      <input type="hidden" {...register("formUrl")} value="" />
       {/* Client First Name */}
       <div className="mb-2 p-0">
         <input
@@ -135,7 +133,8 @@ const FreeDiscussionForm = ({ isHidden, closeModal, name }) => {
           placeholder="e.g. john@hotmail.com"
           {...register("clientEmail", {
             required: true,
-            pattern: /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
+            pattern:
+              /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
           })}
         />
 
@@ -161,12 +160,11 @@ const FreeDiscussionForm = ({ isHidden, closeModal, name }) => {
         {errors.clientMessage && errors.clientMessage.type === "required" && (
           <span className="text-red-600">Required</span>
         )}
-        {errors.clientMessage &&
-          errors.clientMessage.type === "minLength" && (
-            <span className="mt-2 text-red-600">
-              You must provide at least 50 characters for the details
-            </span>
-          )}
+        {errors.clientMessage && errors.clientMessage.type === "minLength" && (
+          <span className="mt-2 text-red-600">
+            You must provide at least 50 characters for the details
+          </span>
+        )}
       </div>
       <div className="w-full mb-2">
         <Recaptcha
@@ -177,7 +175,10 @@ const FreeDiscussionForm = ({ isHidden, closeModal, name }) => {
           onChange={() => setButtonDisabled(false)}
         />
       </div>
-      <button className={classNames("btn btn-primary w-full", buttonName)} disabled={buttonDisabled}>
+      <button
+        className={classNames("btn btn-primary w-full", buttonName)}
+        disabled={buttonDisabled}
+      >
         Send
       </button>
     </form>
