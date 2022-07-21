@@ -35,7 +35,7 @@ const FreeDiscussionForm = ({ isHidden, closeModal, name }) => {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({
-        "g-recaptcha-response": recaptchaValue,
+        // "g-recaptcha-response": recaptchaValue,
         ...payload,
       }),
     })
@@ -70,8 +70,8 @@ const FreeDiscussionForm = ({ isHidden, closeModal, name }) => {
         hidden: isHidden,
       })}
       data-netlify="true"
-      data-netlify-recaptcha="true"
-      netlify-honeypot="field-buffer-guard"
+      // data-netlify-recaptcha="true"
+      netlify-honeypot="bot-field"
       ref={freeDiscussionForm}
       name="direct-free-discussion-form"
       onSubmit={handleSubmit(onSubmit)}
@@ -81,12 +81,12 @@ const FreeDiscussionForm = ({ isHidden, closeModal, name }) => {
         value="direct-free-discussion-form"
         {...register("form-name")}
       />
-      <div className="hidden">
+      {/* <div className="hidden">
         <label>
           Don’t fill this out if you’re human:{" "}
           <input name="field-buffer-guard" />
         </label>
-      </div>
+      </div> */}
       <input type="hidden" {...register("formUrl")} value="" />
       {/* Client First Name */}
       <div className="mb-2 p-0">
@@ -167,7 +167,7 @@ const FreeDiscussionForm = ({ isHidden, closeModal, name }) => {
           </span>
         )}
       </div>
-      <div className="w-full mb-2">
+      {/* <div className="w-full mb-2">
         <Recaptcha
           ref={recaptchaRef}
           sitekey={RECAPTCHA_KEY}
@@ -175,7 +175,7 @@ const FreeDiscussionForm = ({ isHidden, closeModal, name }) => {
           id="recaptcha-google"
           onChange={() => setButtonDisabled(false)}
         />
-      </div>
+      </div> */}
       <button
         className={classNames("btn btn-primary w-full", buttonName)}
         disabled={buttonDisabled}
