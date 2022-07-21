@@ -49,14 +49,18 @@ const FreeDiscussionForm = ({ isHidden, closeModal, name }) => {
       fetch("/", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: encode({ "form-name": event.target.getAttribute("name"), email }),
+        body: encode({
+          "form-name": event.target.getAttribute("name"),
+          formUrl: window.location.href,
+          email,
+        }),
       })
         .then(() => {
           setIsSubmitting(false);
           // setCurrentStep(2);
         })
         .catch((error) => {
-          console.log(error)
+          console.log(error);
           setIsSubmitting(false);
           alert(error);
         });
@@ -67,50 +71,49 @@ const FreeDiscussionForm = ({ isHidden, closeModal, name }) => {
 
   return (
     <form
-    name="discussion-form"
-    method="POST"
-    netlify
-    data-netlify="true"
-    data-netlify-honeypot="bot-field"
-    onSubmit={handleSubmit}
-    className="w-full md:w-2/3"
-  >
-    <input type="hidden" name="form-name" value="discussion-form" />
-    <p className="hidden">
-    <label>
-      Don’t fill this out if you’re human: <input name="bot-field" />
-    </label>
-  </p>
-    <input
-      name="email"
-      type="email"
-      placeholder="Enter your Email to begin"
-      value={email}
-      onChange={onChange}
-      className="bg-white shadow-md rounded-md w-full h-12 focus:outline-none text-sm md:text-base text-center font-light placeholder:text-gray-400"
-    />
-    <p
-      className={classNames(
-        "w-full text-red-500 text-sm mt-1 text-center font-light",
-        {
-          hidden: error === "",
-        }
-      )}
+      name="discussion-form"
+      method="POST"
+      netlify
+      data-netlify="true"
+      data-netlify-honeypot="bot-field"
+      onSubmit={handleSubmit}
+      className="w-full md:w-2/3"
     >
-      {error}
-    </p>
-    
+      <input type="hidden" name="form-name" value="discussion-form" />
+      <p className="hidden">
+        <label>
+          Don’t fill this out if you’re human: <input name="bot-field" />
+        </label>
+      </p>
+      <input
+        name="email"
+        type="email"
+        placeholder="Enter your Email to begin"
+        value={email}
+        onChange={onChange}
+        className="bg-white shadow-md rounded-md w-full h-12 focus:outline-none text-sm md:text-base text-center font-light placeholder:text-gray-400"
+      />
+      <p
+        className={classNames(
+          "w-full text-red-500 text-sm mt-1 text-center font-light",
+          {
+            hidden: error === "",
+          }
+        )}
+      >
+        {error}
+      </p>
 
-    <button
-      type="submit"
-      className="text-white bg-resolvy-blue-200 shadow-md font-bold text-lg h-12 w-full rounded-lg mt-4 hover:bg-resolvy-blue-400 flex justify-center items-center"
-    >
-      Sign Up Today&nbsp;&nbsp;
-      {/* {isSubmitting ? (
+      <button
+        type="submit"
+        className="text-white bg-resolvy-blue-200 shadow-md font-bold text-lg h-12 w-full rounded-lg mt-4 hover:bg-resolvy-blue-400 flex justify-center items-center"
+      >
+        Sign Up Today&nbsp;&nbsp;
+        {/* {isSubmitting ? (
         <Oval color="#fff" secondaryColor="#fafafa" strokeWidth={5} strokeWidthSecondary={5} width={15} height={15}/>
       ) : null} */}
-    </button>
-  </form>
+      </button>
+    </form>
     // <form
     //   className={classNames("contact-form", {
     //     hidden: isHidden,
