@@ -75,6 +75,26 @@ const FreeDiscussionForm = ({ isHidden, closeModal, name }) => {
   const recaptchaRef = useRef(null);
   const [buttonDisabled, setButtonDisabled] = useState(true);
 
+
+  const submitForm = async (data) => {
+    try {
+      const rawResponse = await fetch(
+        "https://us-central1-mki-legal-family-master.cloudfunctions.net/updateProposalStatus",
+        {
+          method: "POST",
+          headers: {
+            Accept: "application/json",
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(data),
+        }
+      );
+      await rawResponse.json();
+    } catch (error) {
+      console.error("error", error);
+    }
+  };
+
   const onSubmit = data => {
     const payload = {
       ...data,
@@ -126,14 +146,14 @@ const FreeDiscussionForm = ({ isHidden, closeModal, name }) => {
       // // ref={freeDiscussionForm}
       // name="direct-free-discussion-form-v2"
       // onSubmit={handleSubmit(onSubmit)}
-      // action="/success"
+     action="/success"
       // encType="application/x-www-form-urlencoded"
       data-netlify="true"
       // data-netlify-recaptcha="true"
       netlify-honeypot="bot-field"
       // ref={freeDiscussionForm}
       name="direct-free-discussion-form-v2"
-      onSubmit={handleSubmit(onSubmit)}
+      // onSubmit={handleSubmit(onSubmit)}
     >
       <input
         name="form-name" // this is the test for netfliy form
