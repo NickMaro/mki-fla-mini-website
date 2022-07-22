@@ -120,14 +120,20 @@ const FreeDiscussionForm = ({ isHidden, closeModal, name }) => {
       // className={classNames("contact-form", {
       //   hidden: isHidden,
       // })}
+      // data-netlify="true"
+      // // data-netlify-recaptcha="true"
+      // netlify-honeypot="bot-field"
+      // // ref={freeDiscussionForm}
+      // name="direct-free-discussion-form-v2"
+      // onSubmit={handleSubmit(onSubmit)}
+      // action="/success"
+      // encType="application/x-www-form-urlencoded"
       data-netlify="true"
-      // data-netlify-recaptcha="true"
+      data-netlify-recaptcha="true"
       netlify-honeypot="bot-field"
       // ref={freeDiscussionForm}
       name="direct-free-discussion-form-v2"
       onSubmit={handleSubmit(onSubmit)}
-      action="/success"
-      encType="application/x-www-form-urlencoded"
     >
       <input
         name="form-name" // this is the test for netfliy form
