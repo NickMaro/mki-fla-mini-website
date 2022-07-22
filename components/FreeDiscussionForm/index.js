@@ -5,6 +5,8 @@ import { useForm } from "react-hook-form";
 import classNames from "classnames";
 
 const FreeDiscussionForm = ({ isHidden, closeModal, name }) => {
+  const [submitting, setSubmitting] = useState(false);
+
   const {
     register,
     handleSubmit,
@@ -14,6 +16,8 @@ const FreeDiscussionForm = ({ isHidden, closeModal, name }) => {
 
   const submitForm = async (data) => {
     try {
+      setSubmitting(true);
+
       const rawResponse = await fetch(
         "https://us-central1-mki-legal-family-master.cloudfunctions.net/sendMKIFamilyMiniSiteEnquiry",
         {
@@ -42,8 +46,11 @@ const FreeDiscussionForm = ({ isHidden, closeModal, name }) => {
         } else {
           freeDiscussionForm.current.reset();
         }
+        setSubmitting(false);
       });
     } catch (error) {
+      setSubmitting(false);
+
       console.error("error", error);
     }
   };
@@ -132,7 +139,13 @@ const FreeDiscussionForm = ({ isHidden, closeModal, name }) => {
         )}
       </div>
 
-      <button type="submit" className={classNames("btn btn-primary w-full")}>
+      <button
+        type="submit"
+        className={classNames("btn btn-primary w-full", {
+          "cursor-not-allowed": submitting,
+        })}
+        disabled={submitting}
+      >
         Send
       </button>
     </form>

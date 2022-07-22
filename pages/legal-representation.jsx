@@ -22,8 +22,6 @@ import Image from "next/image";
 import Link from "next/link";
 
 const SeparationNegotiation = () => {
-
-
   return (
     <BaseLayout isPreFooterVisible={false}>
       <Hero id="services-property-hero" hasImage={true}>
@@ -91,7 +89,7 @@ const SeparationNegotiation = () => {
                 src={ItsExhausting}
                 quality={75}
                 placeholder="blurred"
-                 layout="responsive"
+                layout="responsive"
                 objectFit="contain"
                 alt="Why you need consent orders?"
                 loading="lazy"
@@ -385,7 +383,7 @@ const SeparationNegotiation = () => {
                     <div className="flex items-center gap-8">
                       <div>
                         <div className="w-6 h-6">
-                          <img className="" src={TickSVG} alt="" />
+                          {/* <img className="" src={TickSVG} alt="" /> */}
                         </div>
                       </div>
                       Legal advice from an experienced family lawyer about your
@@ -394,7 +392,7 @@ const SeparationNegotiation = () => {
                     <div className="flex items-center gap-8">
                       <div>
                         <div className="w-6 h-6">
-                          <img className="" src={TickSVG} alt="" />
+                          {/* <img className="" src={TickSVG} alt="" /> */}
                         </div>
                       </div>
                       Negotiate how much time the children spend with you, where
@@ -404,7 +402,7 @@ const SeparationNegotiation = () => {
                     <div className="flex items-center gap-8">
                       <div>
                         <div className="w-6 h-6">
-                          <img className="" src={TickSVG} alt="" />
+                          {/* <img className="" src={TickSVG} alt="" /> */}
                         </div>
                       </div>
                       Ongoing negotiations with your former partner (and their
@@ -413,7 +411,7 @@ const SeparationNegotiation = () => {
                     <div className="flex items-center gap-8">
                       <div>
                         <div className="w-6 h-6">
-                          <img className="" src={TickSVG} alt="" />
+                          {/* <img className="" src={TickSVG} alt="" /> */}
                         </div>
                       </div>
                       Peace of mind that an expert is guiding you towards
