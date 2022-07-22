@@ -49,7 +49,12 @@ const FreeDiscussionForm = ({ isHidden, closeModal, name }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit(submitForm)}>
+    <form
+      className={classNames("contact-form", {
+        hidden: isHidden,
+      })}
+      onSubmit={handleSubmit(submitForm)}
+    >
       <div className="mb-2 p-0">
         <input
           type="text"
