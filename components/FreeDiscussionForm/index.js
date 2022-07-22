@@ -121,6 +121,7 @@ const FreeDiscussionForm = ({ isHidden, closeModal, name }) => {
       name="direct-free-discussion-form-v2"
       onSubmit={handleSubmit(onSubmit)}
       action="/success"
+      encType="application/x-www-form-urlencoded"
     >
       <input
         name="form-name" // this is the test for netfliy form
