@@ -97,7 +97,13 @@ const FreeDiscussionForm = ({ isHidden, closeModal, name }) => {
           text: "We Have Received Your Enquiry",
           icon: "success",
           button: "Close",
-        })
+        }).then(willCloseModal => {
+          if (willCloseModal) {
+            closeModal();
+          } else {
+            freeDiscussionForm.current.reset();
+          }
+        });
       })
       .catch(error =>
         swal({
@@ -111,9 +117,9 @@ const FreeDiscussionForm = ({ isHidden, closeModal, name }) => {
   return (
 
     <form
-      className={classNames("contact-form", {
-        hidden: isHidden,
-      })}
+      // className={classNames("contact-form", {
+      //   hidden: isHidden,
+      // })}
       data-netlify="true"
       // data-netlify-recaptcha="true"
       netlify-honeypot="bot-field"
