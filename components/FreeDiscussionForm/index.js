@@ -71,13 +71,13 @@ const FreeDiscussionForm = ({ isHidden, closeModal, name }) => {
       data-netlify-recaptcha="true"
       netlify-honeypot="field-buffer-guard"
       ref={freeDiscussionForm}
-      name="direct-free-discussion-form"
+      name="direct-free-discussion-form-v2"
       onSubmit={handleSubmit(onSubmit)}
     >
       <input
         name="form-name" // this is the test for netfliy form
         type="hidden"
-        value="direct-free-discussion-form"
+        value="direct-free-discussion-form-v2"
         {...register("form-name")}
       />
       <div className="hidden">
