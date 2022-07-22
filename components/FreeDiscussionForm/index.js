@@ -129,7 +129,7 @@ const FreeDiscussionForm = ({ isHidden, closeModal, name }) => {
       // action="/success"
       // encType="application/x-www-form-urlencoded"
       data-netlify="true"
-      data-netlify-recaptcha="true"
+      // data-netlify-recaptcha="true"
       netlify-honeypot="bot-field"
       // ref={freeDiscussionForm}
       name="direct-free-discussion-form-v2"
@@ -235,7 +235,7 @@ const FreeDiscussionForm = ({ isHidden, closeModal, name }) => {
       </div> */}
       <button
       type="submit"
-        className={classNames("btn btn-primary w-full", buttonName)}
+        className={classNames("btn btn-primary w-full")}
         // disabled={buttonDisabled}
       >
         Send
