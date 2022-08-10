@@ -31,7 +31,7 @@ const ConsentOrdersEssentials = ({ blog }) => {
           <h1 className="text-5xl xl:text-6xl font-extrabold text-center">
             <span className="block text-center">
               <span className="inline-block bg-accent p-2 my-2 text-white">
-                Online Consent Orders
+                Property Consent Orders
               </span>
             </span>
             <span className="block text-center">
