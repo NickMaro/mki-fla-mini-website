@@ -34,7 +34,7 @@ const SeparationNegotiation = () => {
             </span>
             <span className="block text-center">
               <span className="inline-block bg-accent p-2 my-2 text-white">
-                Reach an Agreement. Guided by a Lawyer
+                Let Us Negotiate With Your Ex?
               </span>
             </span>
           </h1>
