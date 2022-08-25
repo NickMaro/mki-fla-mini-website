@@ -174,9 +174,9 @@ const ConsentOrdersEssentials = ({ blog }) => {
           <div className="flex justify-center w-full">
             <div className="w-full md:w-4/12">
               <ProperLinkModal
-                text="Get Started now"
-                to="/"
-                type="modal"
+                text="Get Instant Quote"
+                to="https://app.familylawassist.com.au/consent-order-pricing"
+                type="external"
                 className="btn block w-full btn-primary btn-modal"
                 formButtonName="homepage-hero"
               />
@@ -297,9 +297,9 @@ const ConsentOrdersEssentials = ({ blog }) => {
             </Card>
             <div className="w-full md:w-4/12">
               <ProperLinkModal
-                text="Get Started Now"
-                to="/"
-                type="modal"
+                text="Get Instant Quote"
+                to="https://app.familylawassist.com.au/consent-order-pricing"
+                type="external"
                 className="btn block w-full btn-primary btn-modal"
                 formButtonName="homepage-hero"
               />
@@ -468,9 +468,9 @@ const ConsentOrdersEssentials = ({ blog }) => {
             </div>
             <div className="w-full md:w-4/12">
               <ProperLinkModal
-                text="Get Started Now"
-                to="/"
-                type="modal"
+                text="Get Instant Quote"
+                to="https://app.familylawassist.com.au/consent-order-pricing"
+                type="external"
                 className="btn block w-full btn-primary btn-modal"
                 formButtonName="homepage-hero"
               />
