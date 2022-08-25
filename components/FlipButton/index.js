@@ -4,7 +4,7 @@ import classNames from "classnames";
 // import "./styles.css";
 import NavLink from "components/NavLink";
 
-const FlipButton = ({ className }) => {
+const FlipButton = ({ className , flip = true}) => {
   const [active, setActive] = useState(false);
 
   useEffect(() => {
@@ -42,14 +42,13 @@ const FlipButton = ({ className }) => {
       linkTo: "/",
       type: "modal",
     },
-  ];
+  ].splice(flip ? null : (1, 1));;
 
   return (
     <div
-      className={classNames(
-        `btn-flip relative ${!!active ? "active" : ""}`,
-        className
-      )}
+    className={classNames(`relative ${!!active ? "active" : ""}`, className, {
+      "btn-flip": flip,
+    })}
     >
       {buttons.map((button, i) => {
         const className = i === 0 ? "btn-front" : "btn-back";

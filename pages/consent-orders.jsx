@@ -13,7 +13,6 @@ import LegalTeam from "components/LegalTeam";
 import HowItWorks from "components/HowItWorks";
 import NewPricing from "components/NewPricing";
 import Image from "next/image";
-import Link from "next/link";
 
 import ServicePropertySettle from "../public/assets/images/service-property-settle.jpg";
 import NoSeriousDiscussion from "../public/assets/images/no serious discussion 2.jpeg";
@@ -22,6 +21,7 @@ import AgreementReached from "../public/assets/images/agreement reached.jpg";
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
+import HeroButtonsV2 from "components/HeroButtonsV2";
 
 const ConsentOrdersEssentials = ({ blog }) => {
   return (
@@ -48,20 +48,15 @@ const ConsentOrdersEssentials = ({ blog }) => {
             Available Australia-Wide
           </h3>
         </div>
-        <div className="flex justify-center w-full">
-          <div className="w-full md:w-4/12">
-            <ProperLinkModal
-              text="Save Thousands Now"
-              to="/"
-              type="modal"
-              className="btn block w-full btn-primary btn-modal"
-              formButtonName="homepage-hero"
-            />
-          </div>
-        </div>
+        <HeroButtonsV2
+          text="Get Instant Quote"
+          type="external"
+          to="https://app.familylawassist.com.au/consent-order-pricing"
+          classes="justify-center"
+        />
+
         <p className=" absolute inset-x-0 bottom-0 text-center mb-5 text-sm text-gray-500 italic">
-          {" "}
-          * The price excludes court filing fees. Terms and conditions apply.{" "}
+          * The price excludes court filing fees. Terms and conditions apply.
         </p>
       </Hero>
       <section className="section-grey">
