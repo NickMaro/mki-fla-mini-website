@@ -16,7 +16,7 @@ const HeroButtonsV2 = ({
         className="w-7/12 md:w-5/12 xl:w-3/12 h-12 mb-4 xl:mb-0"
         flip={flip}
       />
-      <div className="w-7/12 md:w-5/12 xl:w-3/12 xl:px-4">
+      <div className="w-7/12 md:w-5/12 xl:w-3/12 xl:px-4 h-12">
         <NavLink
           text={text}
           to={to}
