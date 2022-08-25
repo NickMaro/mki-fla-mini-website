@@ -41,7 +41,7 @@ const ConsentOrdersEssentials = ({ blog }) => {
             </span>
           </h1>
         </div>
-        <div className="w-7/12 mx-auto mb-12 font-medium text-center">
+        <div className="max-w-2xl mx-auto mb-12 font-medium text-center">
           <h3 className="text-center">
             Get affordable Consent Orders for a fraction of the time and cost.
             Reviewed and lodged by leading family lawyers. <br />
@@ -52,10 +52,10 @@ const ConsentOrdersEssentials = ({ blog }) => {
           text="Get Instant Quote"
           type="external"
           to="https://app.familylawassist.com.au/consent-order-pricing"
-          classes="justify-center"
+          classes="justify-center md:items-center"
         />
 
-        <p className=" absolute inset-x-0 bottom-0 text-center mb-5 text-sm text-gray-500 italic">
+        <p className="text-center my-5 text-sm text-gray-500 italic">
           * The price excludes court filing fees. Terms and conditions apply.
         </p>
       </Hero>
