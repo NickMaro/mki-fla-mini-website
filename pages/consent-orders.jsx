@@ -13,7 +13,6 @@ import LegalTeam from "components/LegalTeam";
 import HowItWorks from "components/HowItWorks";
 import NewPricing from "components/NewPricing";
 import Image from "next/image";
-import Link from "next/link";
 
 import ServicePropertySettle from "../public/assets/images/service-property-settle.jpg";
 import NoSeriousDiscussion from "../public/assets/images/no serious discussion 2.jpeg";
@@ -22,6 +21,7 @@ import AgreementReached from "../public/assets/images/agreement reached.jpg";
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
+import HeroButtonsV2 from "components/HeroButtonsV2";
 
 const ConsentOrdersEssentials = ({ blog }) => {
   return (
@@ -41,27 +41,22 @@ const ConsentOrdersEssentials = ({ blog }) => {
             </span>
           </h1>
         </div>
-        <div className="w-7/12 mx-auto mb-12 font-medium text-center">
+        <div className="max-w-2xl mx-auto mb-12 font-medium text-center">
           <h3 className="text-center">
             Get affordable Consent Orders for a fraction of the time and cost.
             Reviewed and lodged by leading family lawyers. <br />
             Available Australia-Wide
           </h3>
         </div>
-        <div className="flex justify-center w-full">
-          <div className="w-full md:w-4/12">
-            <ProperLinkModal
-              text="Save Thousands Now"
-              to="/"
-              type="modal"
-              className="btn block w-full btn-primary btn-modal"
-              formButtonName="homepage-hero"
-            />
-          </div>
-        </div>
-        <p className=" absolute inset-x-0 bottom-0 text-center mb-5 text-sm text-gray-500 italic">
-          {" "}
-          * The price excludes court filing fees. Terms and conditions apply.{" "}
+        <HeroButtonsV2
+          text="Get Instant Quote"
+          type="external"
+          to="https://app.familylawassist.com.au/consent-order-pricing"
+          classes="justify-center md:items-center"
+        />
+
+        <p className="text-center my-5 text-sm text-gray-500 italic">
+          * The price excludes court filing fees. Terms and conditions apply.
         </p>
       </Hero>
       <section className="section-grey">
@@ -179,9 +174,9 @@ const ConsentOrdersEssentials = ({ blog }) => {
           <div className="flex justify-center w-full">
             <div className="w-full md:w-4/12">
               <ProperLinkModal
-                text="Get Started now"
-                to="/"
-                type="modal"
+                text="Get Instant Quote"
+                to="https://app.familylawassist.com.au/consent-order-pricing"
+                type="external"
                 className="btn block w-full btn-primary btn-modal"
                 formButtonName="homepage-hero"
               />
@@ -302,9 +297,9 @@ const ConsentOrdersEssentials = ({ blog }) => {
             </Card>
             <div className="w-full md:w-4/12">
               <ProperLinkModal
-                text="Get Started Now"
-                to="/"
-                type="modal"
+                text="Get Instant Quote"
+                to="https://app.familylawassist.com.au/consent-order-pricing"
+                type="external"
                 className="btn block w-full btn-primary btn-modal"
                 formButtonName="homepage-hero"
               />
@@ -473,9 +468,9 @@ const ConsentOrdersEssentials = ({ blog }) => {
             </div>
             <div className="w-full md:w-4/12">
               <ProperLinkModal
-                text="Get Started Now"
-                to="/"
-                type="modal"
+                text="Get Instant Quote"
+                to="https://app.familylawassist.com.au/consent-order-pricing"
+                type="external"
                 className="btn block w-full btn-primary btn-modal"
                 formButtonName="homepage-hero"
               />
