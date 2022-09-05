@@ -11,8 +11,8 @@ import Abdul from "../public/assets/team/abdul.png";
 import Jessie from "../public/assets/team/jessie.png";
 import Badreiya from "../public/assets/team/badrieya.png";
 
-import TeamDesktop from "../public/assets/team/MKI 2022 Desktop.png";
-import TeamMobile from "../public/assets/team/MKI 2022 Mobile.png";
+import TeamDesktop from "../public/assets/team/mki_desktop.png";
+import TeamMobile from "../public/assets/team/mki_mobile.png";
 
 import Image from "next/image";
 // import Contact from "../components/Contact";

@@ -708,3 +708,4 @@ export async function getStaticProps() {
     },
   };
 }
+
