@@ -85,7 +85,7 @@ NavLink.defaultProps = {
 };
 
 NavLink.propTypes = {
-  type: PropTypes.string.isRequired,
+  type: PropTypes.string,
   formButtonName: PropTypes.string.isRequired,
   to: PropTypes.string,
   className: PropTypes.string,

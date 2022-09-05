@@ -82,6 +82,7 @@ Card.defaultProps = {
   image: null,
   classNames: "",
   imageWrapperClass: "",
+  title:""
 };
 
 export default Card;

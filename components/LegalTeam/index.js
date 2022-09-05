@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import TeamDesktop from "../../public/assets/team/MKI 2022 Desktop.png";
-import TeamMobile from "../../public/assets/team/MKI 2022 Mobile.png";
+import TeamDesktop from "../../public/assets/team/mki_desktop.png";
+import TeamMobile from "../../public/assets/team/mki_mobile.png";
 
 const LegalTeam = ({ children }) => {
   return (
