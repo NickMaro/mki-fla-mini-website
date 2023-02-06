@@ -63,7 +63,6 @@ const ConsentOrdersEssentials = ({ blog }) => {
       <section className="w-full max-w-[800px] h-[220px] md:h-[450px] mx-auto block bg-gray-100 lg:my-3 relative">
         <iframe
           src="https://player.vimeo.com/video/795834795?h=58ed90dafa&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-          frameborder="0"
           allow="autoplay; fullscreen; picture-in-picture"
           allowFullscreen
           width="100%"
