@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import { useForm } from "react-hook-form";
 import classNames from "classnames";
 
-const FreeDiscussionForm = ({ isHidden, closeModal, name }) => {
+const FreeDiscussionForm = ({ isHidden, closeModal, name="" }) => {
   const [submitting, setSubmitting] = useState(false);
 
   const {
