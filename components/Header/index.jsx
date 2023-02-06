@@ -10,7 +10,7 @@ import ProperLink from "./ProperLink";
 import ProperLinkModal from "components/NavLink";
 const navLinks = [
   { path: "services", name: "Our Services", hasSubNav: true, type: "services" },
-  { path: "/send-an-offer", name: "Send an Offer" },
+  // { path: "/send-an-offer", name: "Send an Offer" },
   { path: "/about-us", name: "About Us", hasSubNav: false },
   { path: "/contact-us", name: "Contact Us", hasSubNav: false },
 ];
@@ -18,7 +18,7 @@ const navLinks = [
 const mobileNavLinks = [
   { path: "/consent-orders", name: "Consent Orders" },
   { path: "/legal-representation", name: "Legal Representation" },
-  { path: "/send-an-offer", name: "Send an Offer" },
+  // { path: "/send-an-offer", name: "Send an Offer" },
   { path: "/about-us", name: "About Us", hasSubNav: false },
   { path: "/contact-us", name: "Contact Us", hasSubNav: false },
 ];
